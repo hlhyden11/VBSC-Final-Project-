@@ -1,0 +1,259 @@
+cartodb_id,addrlocat,addrtype,accessabil,organic,transparen,affordabil,commerce_e,education,ahsf,humane_an,community,fair,sustainabl,local,fresh,health_nut,preserves,value_adde,seafood,eggs,meat,dairy,produce,county,regional,national,legal_stru,online_de,cooperativ,food_hub,csa,business_m,business_w,state,city,vbsc,business_n,lon,lat
+239,,,,,,,,,,,,,,,,,,,,,,,,,,,.,,,,,.,N/A,WA,Mt. Vernon,1,North Sound Food Hub,-122.334,48.4212
+1,1,1,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,0,0,1,0,.,1,0,1,0,.,https://www.moorefarmsandfriends.com/store/pc/viewContent.asp?idpage=10,AL,Woodland,1,Moore Farms and Friends,-84.2621,33.7937
+2,0,1,0,1,0,1,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,0,1,0,0,cooperative,0,1,1,1,.,http://shop.mannamarket.net/,AL,Birmingham,1,Manna Market,-86.7704,33.5311
+3,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,0,1,0,0,.,0,0,1,1,.,http://growalabama.com/,AL,Birmingham,1,Grow Alabama,-86.7704,33.5311
+240,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WA,,1,Pudget Sound Food Hub,-120.7401,47.7511
+4,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,1,1,0,1,0,0,.,1,0,1,0,.,http://russellville.locallygrown.net/,AR,Russellville,1,Russellville Community Market,-93.2981,34.9858
+5,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,1,1,0,1,0,0,.,1,0,0,0,.,http://farm2work.locallygrown.net/,AR,Little Rock,1,Farm2Work,-92.3707,34.6743
+6,1,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,cooperative,0,1,0,0,.,N/A,AR,Forrest City,1,"Arkansas Delta Seeds of Change, Inc",-90.8142,34.9825
+7,1,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://littlerock.locallygrown.net/,AR,Little Rock,1,Little Rock Local Food Club,-92.3707,34.6743
+8,0,0,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,1,0,0,.,0,0,0,1,.,http://www.foodshedfarms.com/,AR,Grady,1,Foodshed Farm,-91.7614,34.1081
+9,0,0,0,0,0,0,0,0,0,0,1,1,1,1,,0,0,0,0,0,0,1,0,1,0,0,non-profit,1,0,1,0,.,http://www.ycgrown.com/,AZ,Chino Valley,1,"YCGrown, the Yavapai County Farmers & Ranchers Cooperative",-112.4651,34.7747
+10,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://phxpublicmarket.com/openair/,AZ,Phoenix,1,Downtown Phoenix Public Market (Community Food Connections),-111.9882,33.4954
+12,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,1,1,1,1,0,0,1,0,cooperative,1,1,1,0,.,http://www.farm2familydirect.com/,CA,Nevada City,1,Farm 2 Family Direct,-122.2868,37.7853
+13,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,1,0,1,0,0,.,1,0,1,1,,http://capayvalleyfarmshop.com/,CA,Esparto,1,Capay Valley Farm Shop,-122.0526,38.7086
+14,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,0,0,non-profit,0,0,1,0,.,http://www.tahoefoodhub.org/,CA,Truckee,1,Tahoe Food Hub,-122.2002,40.0241
+15,1,1,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,.,0,0,1,0,.,http://csuinc.org/programs/village-market-place/,CA,Los Angeles,1,Village Market Place,-118.0698,34.6168
+16,1,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,1,1,0,0,0,non-profit,0,0,1,0,.,http://www.mandelamarketplace.org/#!madelafoods/cs4q,CA,Oakland,1,Mandela Marketplace,-80.2877,43.0384
+17,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,non-profit,0,0,1,0,distributor; wholesaler; farm-to-business/institution,http://www.albafarmers.org,CA,Salinas,1,Agriculture and Land-Based Training Association (ALBA) Organics,-121.7829,36.7316
+19,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://www.harvestsantabarbara.com/,CA,Santa Barbara,1,Harvest Santa Barbara,-119.6768,34.4204
+20,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,1,1,0,1,0,0,s corp,0,0,1,0,.,http://www.sonomaorganics.com/,CA,Sebastopol,1,Sonoma Organics,-121.1262,39.3536
+21,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://www.ojaipixies.com/,CA,Ojai,1,Ojai Pixie Growers Association,-121.1935,38.7289
+23,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://feedsonoma.com/,CA,Sebastopol,1,f.e.e.d Sonoma,-121.1262,39.3536
+24,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://oldgrovefarmshare.com/,CA,Mentone,1,Inland Orange Conservancy (Old Grove Oranges),-117.15,34.0241
+27,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,0,0,primary food producers and harvesters,http://www.swantonberryfarm.com/,CA,Davenport,1,Swanton Berry Farm,-122.2537,37.0646
+29,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,1,1,0,1,0,0,farmer-owned cooperative,1,1,1,1,CSA; buying club,http://www.headwatersgrowers.coop,CO,Fowler,1,Arkansas Valley Organic Growers,-104.0584,38.125
+30,0,0,0,0,0,0,0,,1,0,0,1,1,0,0,1,1,1,0,1,1,0,1,0,0,0,LLC,1,0,1,0,.,http://ranchfoodsdirect.com/,CO,Colorado Springs,1,Ranch Foods Direct LLC,-104.7995,38.8292
+31,0,1,1,0,0,0,0,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,0,0,LLC,0,0,1,0,.,http://www.locofooddistribution.com/,CO,Fort Collins,1,LoCo Food Distribution,-105.0938,40.5409
+32,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,.,0,0,0,0,.,http://www.homesteadmeats.com/,CO,Delta,1,Homestead Meats,-107.609,38.855
+26,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,.,0,0,0,1,.,http://www.phatbeetsproduce.org/,CA,Oakland,1,Phat Beets Produce,-122.280377,37.842578
+25,0,1,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,.,0,0,0,1,.,https://www.southcentralfarmers.com/,CA,Sun Valley,1,"South Central Farmers Cooperative, LLC",-118.245053,34.007796
+28,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,.,,,,,.,http://www.smgov.net/portals/farmersmarket/,CA,Santa Monica,1,Santa Monica Farmers Markets,-70.751099,43.075694
+11,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,1,1,0,0,0,.,0,0,0,1,.,https://www.chowlocally.com/,AZ,Phoenix,1,Chow Locally,-111.969164,33.421086
+33,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,1,0,0,LLC,1,0,1,0,.,http://www.ctffe.com/index.htm,CT,East Haddam,1,"Connecticut Farm Fresh Express, LLC",-72.5665,41.4203
+34,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,1,0,0,1,0,0,.,0,0,1,0,.,http://www.thefarmerscow.com/,CT,Lebanon,1,The Farmer's Cow,-72.279,41.6262
+35,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,.,0,0,1,0,.,http://www.dccentralkitchen.org/,DC,Washington,1,DC Central Kitchen,-77.0379,38.9347
+258,,,,,,,,,,,,,,,,,,,,,,,,,,,.,,,,,.,N/A,WI,Fennimore,,Fennimore Produce Auction,-90.6554,42.9836
+37,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1,1,1,1,0,1,0,0,.,1,0,1,0,.,https://www.rhomarket.com/,FL,Tallahassee,1,Red Hill Online Farmers Market,-84.2774,30.4444
+38,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,cooperative,0,1,0,0,.,http://newnorthfloridacoop.com/index_files/nnfc.htm,FL,Marianna,1,New North FL Cooperative,-85.1851,30.7794
+39,0,1,0,0,1,0,0,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,0,1,0,0,LLC,0,,,,.,http://suncoastfoodalliance.com/,FL,Tampa Bay,1,Suncoast Food Alliance,-82.4212,28.0695
+40,0,1,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,0,0,1,0,.,1,0,1,0,.,http://northeastgeorgia.locallygrown.net/,GA,Clarksville,1,Northeast Georgia Locally Grown,-83.7321,32.8914
+41,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,0,0,1,0,.,1,0,1,0,.,http://www.turniptruckga.com/,GA,Atlanta,1,The Turnip Truck,-84.3926,33.7994
+42,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,cooperative,0,1,0,0,.,http://www.cgsfc.com/,GA,Glenville,1,Coastal Georgia Small Farmers Cooperative,-85.1643,32.1403
+43,0,0,0,0,1,1,0,0,0,,0,1,1,0,0,1,1,0,1,0,1,1,0,1,0,0,.,0,0,1,1,.,http://www.globalgrowers.org/,GA,Avondale Estates,1,Global Growers Network,-84.2627,33.7821
+44,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,.,0,0,1,0,.,http://www.blankfoundation.org/sites/default/files/food-oasis/Fulton%20Fresh%20Mobile%20Farmers%20Market%20Resource%20Letter_v030614.pdf,GA,Atlanta,1,Fulton County Cooperative Fresh Mobile Farmers' Market,-84.3926,33.7994
+45,0,1,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,0,0,LLC,1,0,1,1,,http://www.oahufresh.com/,HI,Honolulu,1,Oahu Fresh,21.3069,-157.8583
+46,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,,1,0,0,0,0,1,0,1,0,0,.,1,0,1,1,CSA,http://www.adaptationsaloha.com,HI,Captain Cook,1,"Adaptations, Inc",-157.8508,21.3073
+47,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,0,1,.,http://www.hawaiifoodbasket.org/,HI,Hilo,1,"The Food Basket, Inc",-155.1459,19.497
+48,0,1,0,0,0,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0,0,cooperative,1,1,1,0,.,http://iowafood.coop/,IA,Des Moines,1,Iowa Food Cooperative,-93.6187,41.6277
+49,0,1,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,0,0,cooperative,1,1,0,0,.,http://iowavalleyfood.com/,IA,Amana,1,Iowa Valley Food Cooperative,-91.8651,41.7944
+50,0,0,1,0,0,0,0,1,1,1,0,1,1,0,1,0,0,0,0,1,0,0,0,0,1,0,.,1,0,1,0,.,http://www.grassrunfarms.com/,IA,Dorchester,1,Grass Run Farms,-91.5707,43.4777
+51,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,1,0,0,1,0,cooperative,0,1,0,0,.,http://www.grownlocally.com/,IA,Decorah,1,GROWN Locally,-91.7797,43.3061
+52,0,0,0,0,0,0,0,1,1,1,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.iowafoodhub.com/,IA,Decorah,1,Iowa Food Hub,-91.7822,43.3061
+53,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,1,0,1,1,1,0,0,0,,0,0,0,1,CSA; roadside stand,http://anniesgardensandgreens.com,IA,FT. Atkinson,1,Annie's Garden and Greens,-91.9288,43.1533
+54,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,0,cooperative,1,1,0,0,hybrid; farm to consumer (online ordering); farm to business/institution; wholesaler,http://idahosbounty.coop,ID,Garden City,1,Idaho's Bounty Co-op,-116.2413,43.6263
+55,,,,,,,,,,,,,,,,1,1,0,1,1,1,1,0,1,0,0,.,0,1,0,0,.,http://www.sixriversmarket.com/,ID,Sandpoint,1,Six Rivers Market,-116.5477,48.2709
+56,0,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,s corp,1,0,1,1,.,https://www.gourmetgorilla.com/,IL,Chicago,1,"Gourmet Gorilla, Inc",-87.9966,41.7504
+57,0,1,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,.,1,0,1,0,.,https://www.freshpicks.com/,IL,Niles,1,Irv & Shelly's Fresh Picks,-87.8455,42.2192
+58,0,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1,1,0,0,0,0,1,0,0,1,0,non-profit,1,0,0,1,education; farm,http://www.learngrowconnect.org/urban/rockford,IL,Rockford,1,Angelic Organics Learning Center - Roots and Wings Network,-87.8804,42.1971
+59,0,1,0,1,0,0,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,0,1,0,0,non-profit,0,0,1,1,.,http://www.healthyfoodhub.org/,IL,Chicago,1,Healthy Food Hub,-87.6422,41.6851
+60,1,1,0,1,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,.,0,0,1,0,.,N/A,IL,Chicago,1,Fresh Moves Mobile Produce Market,-87.9966,41.7504
+61,0,1,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,1,1,1,1,0,0,1,0,LLC,0,0,1,0,.,http://localfoods.com/,IL,Chicago,1,"Chicago Local Foods, LLC dba Local Foods",-87.9966,41.7504
+62,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,.,0,0,1,0,.,http://www.goodnessgreeness.com/eSource/default/Login.aspx?role=customer,IL,Chicago,1,Goodness Greenness,-87.9966,41.7504
+63,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,1,0,1,0,1,0,0,LLC,0,0,1,0,.,http://www.thestewardsoftheland.com/,IL,Fairbury,1,Stewards of the Land,-88.5165,40.7522
+64,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,.,https://www.redmeatmarket.com/,IL,Chicago,1,Red Meat Market,-87.9966,41.7504
+65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,.,0,0,1,0,.,http://windcrestdairy.com/about_us.html,IL,Trenton,1,Windcrest Dairy Inc,-90.827,40.6874
+66,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,1,1,0,1,0,1,0,0,LLC,0,0,0,1,.,http://www.goodearthfoodalliance.com/,IL,Farmington,1,Good Earth Food Alliance CSA,-90.0013,40.7035
+67,0,1,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,.,1,0,1,0,.,http://greenbeandelivery.com/,IN,Indianapolis,1,Green B.E.A.N Delivery,-86.5224,39.6447
+68,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,1,1,1,1,1,0,1,0,0,non-profit,1,0,1,0,.,http://hoosierharvestmarket.com/,IN,Greenfield,1,Hoosier Harvest Market,-85.7662,39.8152
+69,1,1,,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.thisoldfarminc.com/,IN,Colfax,1,"This Old Farm, Inc",-87.4198,41.1674
+70,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,.,0,1,0,0,.,http://www.rollingprairie.net/,KS,Lawrence,1,Rolling Prairie Farmers Alliance,-95.3694,38.8611
+71,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,0,.,0,0,1,1,.,http://www.goodnaturedfamilyfarms.com/,KS,Bronson,1,Good Natured Family Farms,-95.0605,37.9616
+72,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,cooperative,0,1,0,0,.,http://www.campbellcountybeef.com/,KY,Cold Spring,1,Campbell County Beef Association,-84.3869,39.0344
+73,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,1,0,.,0,0,1,0,.,http://www.growfarms.com/,KY,Louisville,1,Grow Farms (Horton Fruit Company),-85.7627,38.2189
+77,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,c-corp,1,0,1,0,.,http://www.masslocalfood.org/,MA,Sterling,1,Massachusetts Local Food Cooperative,-72.6751,42.2376
+78,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,1,0,1,1,0,0,1,0,B-corp,1,0,1,0,aggregator; box scheme; home and office delivery,http://www.bostonorganics.com,MA,Charlestown,1,Boston Organics,-71.0529,42.3762
+79,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,non-profit,0,1,0,1,.,http://justroots.org/farm/common-wealth-csa/,MA,Greenfield,1,Common Wealth CSA,-72.6145,42.4721
+80,1,1,1,1,1,0,0,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1,0,1,0,0,LLC,0,0,1,0,.,http://orfoodex.com/,MA,Lexington,1,OR FoodEx,-71.1486,42.4806
+81,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1,0,1,0,1,1,0,1,0,0,.,0,0,1,0,.,http://southshoreorganics.com/,MA,Duxbury,1,South Shore Organics,-70.6302,41.9984
+82,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,0,1,1,0,0,1,0,cooperative,0,0,1,0,.,http://www.farmdirectcoop.org/,MA,Marblehead,1,Farm Direct Coop,-71.0601,42.6043
+84,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,.,0,0,1,0,.,http://www.fccdc.org/about-the-center,MA,Greenfield,1,Western MA Food Processing Center,-72.5521,42.6076
+85,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,LLC,0,0,1,0,.,http://www.northeastfamilyfarms.com/,MA,Woburn,1,"Northeast Family Farms, LLC",-71.1479,42.5792
+86,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,LLC,0,0,1,0,producer program; distributor,http://azulunabrands.com/Contacts/Contacts.html,MA,North Grafton,1,Azuluna,-71.6824,42.2125
+88,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,0,,1,1,1,0,.,https://www.friendsandfarms.com/,MD,Columbia,1,Friends and Farms,-76.8413,39.2392
+89,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,1,0,0,LLC,1,1,0,1,.,http://www.garrettgrowers.com/,MD,Oakland,1,"Garrett Growers Cooperative, LLC",-79.4097,39.4083
+91,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,0,0,1,0,.,1,0,1,0,.,https://www.washingtonsgreengrocer.com/,MD,Capital Heights,1,Washington's Green Grocer,-123.407,48.6381
+92,1,1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,cooperative,1,1,1,0,.,http://www.crownofmainecoop.com/,ME,North Vassalboro,1,Crown O' Maine Organic Cooperative,-69.5976,44.4361
+93,1,1,0,0,1,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,1,.,http://nesfp.org/worldpeas,ME,Lowell,1,World PEAS Marketing Cooperative,-70.2839,43.6549
+94,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,1,.,https://www.cultivatingcommunity.org/buy-our-produce/fresh-start-farms-csa/,ME,Portland,1,Fresh Start Farms CSA,-70.2928,43.6933
+95,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,LLC,0,0,1,0,.,http://www.farmfreshconnection.org/farm_fresh_CONNECTION/Welcome.html,ME,Freeport,1,Farm Fresh Connection LLC,-70.2573,43.9058
+96,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,1,1,0,0,1,0,LLC,0,0,1,0,.,http://northerngirlmaine.com/,ME,Limestone,1,"Northern Girl, LLC",-67.6863,46.0554
+97,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,0,1,0,0,.,1,1,0,0,.,http://www.westmichigancoop.com/,MI,Grand Rapids,1,West Michigan Cooperative,-85.6888,42.972
+98,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,c-corp,1,0,1,0,.,http://www.harvestmichigan.com/,MI,Clarkston,1,Harvest Michigan,-83.4192,42.7399
+90,0,1,0,0,0,0,0,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,0,0,1,0,LLC,1,0,1,0,.,http://www.hometownharvest.com/home.php,MD,Frederick,1,Hometown Harvest,-77.428787,39.367247
+76,0,1,0,0,0,0,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,0,1,0,family-owned,1,0,1,0,market; aggregator; home delivery; retail food-hub,http://www.berkshireorganics.com,MA,Dalton,1,Berkshire Organics Delivery,-73.198939,42.430107
+75,1,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,private,0,0,1,0,hybrid; farm to consumer; farm to business/institution (online ordering),http://www.jackandjakes.com,LA,New Orleans,1,"Jack & Jake's, Inc",-90.080836,29.942399
+74,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,0,0,1,0,LLC,1,0,1,0,.,https://hollygrovemarket.com/,LA,New Orleans,1,Holly Grove Market and Farm,-90.116686,29.964565
+83,0,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,non-profit,0,0,1,0,multi-farm direct-to-wholesale food business chains,http://www.redtomato.org/,MA,Plainville,1,Red Tomato,-71.3328,42.0043
+99,0,1,0,0,1,0,0,0,0,1,1,1,1,0,0,0,1,0,1,1,1,1,0,1,0,0,LLC,0,0,1,0,distributor,http://cherrycapitalfoods.com,MI,Traverse City,1,Cherry Capital Foods,-85.4147,44.8941
+100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,.,0,0,1,0,.,http://walsmalyons.com/,MI,Byron Center,1,Walsma and Lyons,-85.723,42.8495
+103,0,1,0,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,1,0,0,1,0,1,0,0,.,0,0,1,1,.,http://sproutmn.com/,MN,Brainerd,1,Sprout MN,-94.2528,46.3016
+104,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.localfoodmarketplace.com/twincities/,MN,Webster,1,Twin Cities Local Food,-93.3498,44.4318
+105,1,1,0,1,0,1,0,0,0,0,0,1,1,0,0,,0,0,0,0,0,1,0,1,0,0,non-profit,0,0,0,1,multiple farmer CSA,http://www.mnfoodassociation.org/big-river-farms-csa,MN,Marine on St. Croix,1,Big River Farms (Minnesota Food Association),-92.7711,45.1955
+106,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,0,0,.,http://www.hmongfarmers.com/,MN,St. Paul,1,Hmong American Farmers Association,-93.2375,44.8626
+107,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,.,0,0,0,0,.,http://www.thousandhillscattleco.com/,MN,Cannon Falls,1,Thousand Hills Cattle Company,-92.9014,44.5121
+108,0,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,.,,,,,value-added food production,http://www.lorentzmeats.com/,MN,Cannon Falls,1,Lorentz Meats,-92.8751,44.5089
+109,0,0,0,0,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,1,0,.,1,0,1,0,.,http://farmergirlmeats.com/,MO,Warrenton,1,Farmer Girl Grassfed & Pasture Raised Meats,-91.1791,38.793
+110,0,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://fieldsfoods.com/about-us#.,MO,St. Louis,1,Fields Foods,-90.3415,38.5359
+111,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,1,0,1,1,1,1,0,0,1,0,LLC,0,0,1,0,.,http://www.freshfoodexpress.com/,MO,Kansas City,1,"Fresh Food Express, LLC",-94.1657,39.3241
+112,0,0,0,0,0,0,0,0,0,1,0,1,1,1,,0,0,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.rootcellarmo.com/,MO,Columbia,1,Root Cellar,-92.3362,38.9527
+113,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.webbcityfarmersmarket.com/,MO,Webb City,1,Webb City Farmers Market,-94.4699,37.1879
+114,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,1,1,1,0,0,1,0,LLC,0,0,1,0,.,http://www.eatherestl.com/,MO,St. Louis,1,Eat Here St Louis LLC,38.627,-90.1994
+115,1,0,0,1,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,non-profit,0,0,0,0,SNAP match program at farmers markets,http://beansandgreens.org,MO,Kansas City,1,Beans and Greens Mobile Market,-94.1657,39.3241
+116,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,cooperative,0,1,0,0,food product aggregation and distribution,http://www.federationsoutherncoop.com/coopmarket/indianspr.htm,MS,Petal,1,Indian Springs Farmer Association,-91.4231,31.3928
+117,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,0,0,.,0,1,0,1,.,http://wmgcoop.com/,MT,Arlee,1,Western Montana Growers Cooperative,-114.0816,47.1626
+118,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,0,0,1,0,.,0,0,1,0,.,http://www.qfdistributing.com/,MT,Bozeman,1,Quality Foods Distributing,-109.3566,45.6336
+119,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,0,1,0,0,.,1,0,1,1,.,https://www.polkfreshfoods.com/,NC,Mill Spring,1,"Polk Fresh Foods, Inc",-80.7846,35.0473
+120,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,1,1,0,1,0,0,.,1,0,1,1,.,http://www.farmersfreshmarket.org/downeast/,NC,Whiteville,1,Down East Connect,-78.7254,34.3398
+121,1,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,1,0,0,.,1,0,1,0,.,http://www.feastdowneast.org/,NC,Burgaw,1,Feast Down East,-79.0879,34.6594
+122,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,LLC,1,0,1,0,.,https://www.golocalncfarms.com/main/default.aspx,NC,Concord,1,"GO Local NC Farms, LLC",-80.603,35.399
+123,1,0,0,1,0,0,0,0,0,1,0,0,1,1,1,1,1,0,0,0,0,1,0,1,0,0,non-profit,1,0,0,0,.,http://www.cnpnc.org/,NC,Durham,1,Community Nutrition Partnership,-78.9185,36.0175
+124,1,0,0,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,"multi-stakeholder cooperative (producers, consumers, employees)",0,1,0,0,aggregator; subscription program; multi-farm CSA,http://www.sandhillsfarm2table.com/home.php,NC,Whispering Pines,1,Sandhills Farm to Table Cooperative,-78.0517,36.5315
+125,0,1,0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,0,0,cooperative,0,1,0,0,.,http://www.newrivergrowers.com/,NC,West Jefferson,1,New River Organic Growers,-81.4913,36.4032
+126,1,0,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,.,0,0,1,0,.,http://workinglandscapesnc.org/,NC,Warrenton,1,Working Landscapes,-78.3343,36.3545
+127,1,0,0,0,0,1,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://www.farmerfoodshare.org/,NC,Chapel Hill,1,Farmer Foodshare Pennies on the Pound (POP) Market,-79.0146,35.9516
+128,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,LLC,0,0,1,0,hybrid; farm to consumer (box delivery); farm to business/institution,http://firsthandfoods.com,NC,Durham,1,"Firsthand Foods, LLC",-78.9185,36.0175
+129,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.theproducebox.com/,NC,Raleigh,1,The Produce Box,-78.7808,35.9126
+130,,1,,,,,,,,,,1,1,,,1,1,0,0,0,0,1,,,,,LLC,0,0,1,0,.,http://www.easterncarolinaorganics.com/,NC,Pittsboro,1,Eastern Carolina Organics,-79.1772,35.7201
+131,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,0,0,1,0,1,0,0,.,0,0,0,1,.,http://highcountrycsa.wix.com/2015,NC,Banner Elk,1,High Country CSA,-81.7765,36.1543
+101,0,0,0,,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,1,1,1,0,0,1,0,.,0,0,1,0,.,http://www.easternmarket.com/,MI,Detroit,1,Eastern Market,-83.044088,42.34908
+132,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,.,0,0,0,0,.,http://www.walking-fish.org/,NC,Beaufort,1,Walking Fish,-76.6527,34.7195
+133,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,cooperative,1,1,1,0,.,https://www.nebraskafood.org/,NE,Lincoln,1,Nebraska Food Cooperative,-96.5934,40.7263
+134,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,1,0,1,0,0,,0,0,0,1,.,http://tomatotomato.org/,NE,Omaha,1,Tomato Tomato,-95.9172,41.2295
+135,0,0,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,1,1,0,0,1,0,cooperative,1,1,0,0,.,http://ncfcoop.com/,NH,Colebrook,1,North Country Farmers Coop,-71.5083,44.8888
+137,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,,0,0,0,0,0,1,0,0,1,0,.,0,1,0,0,.,http://www.tricountycoop.net/,NJ,East Windsor,1,Tri-County Cooperative,-74.5392,40.2757
+138,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,1,0,0,private,1,1,1,1,CSA; aggregator,http://www.beneficialfarm.com,NM,Santa Fe,1,Beneficial Farm CSA,-106.0194,35.6393
+139,0,1,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,0,0,cooperative,0,1,1,0,distributor,http://lamontanita.coop/co-op-distribution-center-2/,NM,Albuquerque,1,La Montanita Co-op Distribution Center,-106.5451,35.1752
+140,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,farmer collective,0,1,0,1,"farmer collective, aggregation, farm-to-school",https://afsc.org/program/new-mexico-agri-cultura-network,NM,Albuquerque,1,Agri-Cultura Network,-106.7234,35.3115
+141,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://farmersmarketinstitute.org/,NM,Santa Fe,1,Santa Fe Farmers Market Institute,-106.0194,35.6393
+142,0,1,0,0,1,0,1,0,0,0,1,1,1,1,0,0,1,0,0,1,0,1,0,1,0,0,.,0,0,1,0,.,http://skarsgardfarms.deliverybizpro.com/home.php,NM,Albuquerque,1,Skaarsgard Farms,-106.5451,35.1752
+143,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,0,1,.,http://www.rioarribafarms.com/,NM,Abiquiu,1,Rio Arriba Farms CSA,-106.3243,35.1984
+144,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,cooperative,1,1,0,0,grazer cooperative; online ordering; supplier to select butchers,http://adkgrazers.com,NY,Greenwich,1,Adirondack Grazers Cooperative,-74.015,40.7049
+145,1,0,0,0,1,0,0,0,0,1,0,0,1,0,1,1,1,0,1,1,1,1,0,1,0,0,non-profit,1,0,1,1,.,http://corbinhillfoodproject.org/,NY,New York,1,Corbin Hill Food Project,-73.8677,40.8533
+146,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,.,1,0,1,0,.,http://chqlocalfood.com/home/,NY,Mayville,1,CHQ Local Food Inc,-73.7677,40.6994
+147,0,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,1,0,1,0,0,LLC,1,0,1,0,.,https://farmiemarket.com/,NY,Albany,1,FarmieMarket Online,-73.7635,42.6632
+148,0,1,0,0,0,0,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1,0,1,0,0,.,1,0,1,0,.,http://thegoodfoodcollective.com/,NY,Rochester,1,"Good Food Collective-Head Water Foods, Inc",-77.6751,43.0847
+149,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,0,0,1,0,.,1,0,1,0,.,http://regionalaccess.net/,NY,Ithaca,1,"Regional Access, Inc",-73.8787,40.7443
+150,,,,,,,,,,,,1,1,,,,,,,,,,0,1,0,0,.,1,0,1,0,.,http://www.farmshedcny.com/harvest/,NY,New Woodstock,1,Farmshed Harvest,-73.9237,40.7907
+151,0,0,0,0,1,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,1,0,0,0,farm-to-chef,http://www.hudsonvalleybounty.com,NY,Hudson,1,Hudson Valley Bounty,-73.7577,42.2671
+152,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,0,1,0,1,0,0,cooperative,0,1,0,0,.,http://northcountrygrown.com/who-we-are/current-board-of-directors/,NY,Massena,1,North Country Grown Cooperative,-74.9718,44.9505
+153,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,cooperative,0,1,0,0,.,http://edenvalleygrowers.com/,NY,Eden,1,Eden Valley Growers,-79.2523,43.1693
+154,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,.,0,1,0,0,.,http://www.grangecopacker.com/,NY,Essex,1,"Grange Co-packer, LLC",-79.0591,42.8685
+155,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,0,1,0,0,non-profit,0,0,1,0,food retailers,http://www.greenmarketco.org/,NY,New York,1,Greenmarket Co,-73.8677,40.8533
+156,1,0,1,1,0,0,0,0,0,1,1,1,1,0,1,0,1,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://fingerlakesfresh.com/FLF/,NY,Groton,1,Finger Lakes Fresh Food Hub,-72.068,41.3231
+157,1,0,0,1,0,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,0,1,0,0,.,0,0,1,0,.,http://mass-ave.org/programs/mobile-market/,NY,Buffalo,1,Growing Green Mobile Market,-78.8467,42.7996
+158,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,.,http://foodlinkny.org/,NY,Rochester,1,Foodlink,-77.584,43.1042
+159,0,1,0,0,0,0,1,0,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,1,0,0,.,0,0,1,0,.,http://www.smallworldfood.com/,NY,Rochester,1,Small World Food,-77.6751,43.0847
+160,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,1,1,1,1,0,0,1,0,.,0,0,1,0,.,http://www.luckydogorganic.com/#!hub/c1prx,NY,Hamden,1,Lucky Dog Local Food Hub,-74.1078,40.5827
+161,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,.,0,0,1,0,.,http://nelpsc.com/,NY,Sprakers,1,"Northeast Livestock Processing Service Company, LLC",-74.5612,42.9044
+162,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,1,0,0,LLC,0,0,1,0,.,http://www.field-goods.com/,NY,Athens,1,Field Goods,-73.8126,42.2632
+163,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://farm2tablecopackers.com/,NY,Kingston,1,Farm to Table Co-packers,-73.9811,41.937
+164,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,.,0,0,0,1,.,http://www.wintersunfarms.com/,NY,New Paltz,1,Winter Sun Farms,-74.0671,41.7419
+165,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1,1,1,1,0,1,0,0,.,1,1,1,0,.,https://www.localfoodmarketplace.com/laketoriver/,OH,Youngstown,1,Lake to River Cooperative,-80.6828,41.103
+166,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,1,.,http://fairridgefarms.com/,OH,Hillsboro,1,Fair Ridge Farms,-83.7439,39.079
+167,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,1,0,LLC,0,0,1,0,.,http://www.shagbarkmill.com/,OH,Athens,1,Shagbark Seed and Mill Company,-80.9441,40.2471
+168,1,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://www.cityfresh.org/,OH,Oberlin,1,New Agrarian Center,-84.4738,39.1785
+169,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,.,0,0,1,0,auction,http://www.ohiofoodshed.org/chesterhill/,OH,Chesterhill,1,Chesterhill Produce Auction,-83.088,39.25
+170,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,.,0,0,1,0,.,http://www.mvfarmtochef.com/,OH,Dayton,1,Miami Valley Farm to Chef,-84.4323,39.1054
+171,1,0,0,1,1,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,1,0,1,0,0,non-profit,0,0,0,1,.,http://growyoungstown.org/,OH,Youngstown,1,Grow Youngstown,-80.6828,41.103
+172,0,1,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,cooperative,0,1,0,0,.,http://www.oklahomafood.coop/,OK,Oklahoma City,1,Oklahoma Food Cooperative,-97.465,35.4491
+173,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.urbanagrarian.com/,OK,Oklahoma City,1,Urban Agrarian,-97.465,35.4491
+175,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,1,1,1,0,0,0,1,0,0,.,1,0,0,0,.,http://www.eatoregonfirst.com/,OR,Hillsboro,1,Eat Oregon First,-122.8666,45.5391
+176,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,cooperative,0,1,1,0,multi-farm direct-to-wholesale food business chains,http://www.countrynaturalbeef.com/,OR,Burns,1,Country Natural Beef,43.5863,-119.0541
+177,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,0,.,0,0,1,1,.,http://www.lanefood.org/home.php,OR,Springfield,1,Lane Local Foods,-123.0255,44.0553
+178,0,1,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,non-profit,0,0,1,1,.,http://www.gorgegrown.com/,OR,Hood River,1,Gorge Grown Food Network,-121.5012,45.7132
+179,1,0,0,1,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,.,0,0,1,0,.,http://www.growportland.org/growers-alliance/,OR,Portland,1,Grow Portland (Portland Growers Alliance),-122.6785,45.5157
+180,0,1,0,0,1,1,1,0,0,1,0,1,1,0,1,1,1,1,1,1,1,1,0,1,0,0,non-profit,0,0,1,0,.,http://www.centraloregonlocavore.org/,OR,Bend,1,Central Oregon Locavore,-121.2708,44.0552
+181,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://opwfresh.com/,OR,Ashland,1,Organic Produce Warehouse,-122.7117,42.1971
+182,0,1,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,1,0,0,1,0,s corp,0,0,1,0,.,http://www.organicgrown.com/,OR,Eugene,1,Organically Grown Company,44.0521,-123.0868
+183,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,,0,0,1,0,.,0,0,0,1,.,http://hoodriverorganic.com/,OR,Hood River,1,"Hood River Organic, Inc",-121.5012,45.7132
+184,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,cooperative,1,1,0,1,.,http://www.pennscorner.com/,PA,Pittsburgh,1,Penn's Corner Farm Alliance,-79.9996,40.4369
+185,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,0,0,0,0,1,0,0,0,0,1,0,LLC,1,0,1,0,.,https://www.phillycowshare.com/,PA,Philadelphia,1,Philly CowShare,-76.3556,39.9973
+186,0,1,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,0,1,0,1,0,1,0,0,.,0,1,1,1,.,http://www.clarionriverorganics.com/,PA,Sligo,1,Clarion River Organics,-75.7994,39.8226
+187,0,1,0,0,0,0,0,1,1,0,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,.,0,1,0,1,.,http://www.lancasterfarmfresh.com/,PA,Leola,1,Lancaster Farm Fresh Cooperative,-76.3175,40.0946
+188,0,1,0,0,0,0,0,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,0,1,0,0,cooperative,0,1,0,1,.,http://www.nwpagrowers.com/,PA,Mercer,1,"Northwest Pennsylvania Growers Cooperative, Inc",-80.3737,41.4076
+189,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,cooperative,0,1,0,0,aggregator; wholesale distributor; farm-to-business,http://www.tog.coop,PA,Hustontown,1,Tuscarora Organic Growers Cooperative,-78.0285,40.0473
+190,1,0,0,0,1,0,0,0,0,1,0,1,1,0,0,1,1,0,1,1,1,1,0,0,1,0,non-profit,0,0,1,1,distributor; farm-to-business/institution,http://commonmarketphila.org,PA,Philadelphia,1,Common Market Philadelphia,-76.3556,39.9973
+191,0,1,0,0,0,0,0,0,1,0,0,1,1,1,1,0,1,0,1,0,1,1,0,1,0,0,.,0,0,1,1,.,http://www.groundworkfarms.com/,PA,Millheim,1,GroundWork Farms,-77.4647,40.8633
+192,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,1,.,http://www.greensgrow.org/,PA,Philadelphia,1,Greensgrow Farm,-75.1797,39.927
+193,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0,1,0,1,0,0,.,0,0,1,1,.,http://www.lfcfresh.com/,PA,Honesdale,1,Lackawaxen Farm Company,-75.2502,41.5498
+194,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,1,1,1,0,0,1,0,.,0,0,1,0,.,http://www.fairfoodphilly.org/,PA,Philadelphia,1,Fair Food Philly,-76.3556,39.9973
+195,1,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,non-profit,1,0,1,0,hybrid; Farm to consumer (Veggie Box); Farm to business/institution (Market Mobile),http://www.farmfresh.org/hub/,RI,Pawtucket,1,Farm Fresh Rhode Island - Market Mobile,-71.3877,41.8804
+196,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,cooperative,0,1,0,0,.,http://www.littlecitygrowers.org/about.html,RI,Providence,1,Little City Growers,-71.4018,41.8496
+197,1,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,non-profit,0,0,1,0,.,http://growfoodcarolina.com/,SC,Charleston,1,GrowFood Carolina,-80.0225,32.7893
+198,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,0,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://sewanee.locallygrown.net/,TN,Sewanee,1,Cumberland Farmer's Market,-82.5589,36.5562
+199,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,.,0,0,1,0,.,http://goodfoodforgoodpeople.org/,TN,Nashville,1,Good Food for Good People,-86.5637,36.6776
+200,0,1,0,0,0,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,0,1,0,0,cooperative,1,1,0,0,.,http://www.crosstimberscoop.org/,TX,Denton,1,Cross Timbers Food Cooperative,-97.1336,33.223
+201,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,1,1,1,0,1,0,0,.,1,0,1,0,.,http://www.greenling.com/,TX,Austin,1,Greenling,-97.7834,30.2066
+202,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0,1,1,1,1,0,1,0,0,LLC,1,0,1,0,aggregator; online ordering,http://localfoodmarketplace.com/bountifulsprout/,TX,Wimberley,1,Bountiful Sprout,-95.1142,32.5883
+203,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,0,0,0,1,1,1,1,0,1,0,0,.,0,0,0,1,.,http://www.citysprout.com/,TX,Austin,1,CitySprout,-97.7834,30.2066
+204,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,0,1,1,0,1,0,0,LLC,,,1,,.,http://www.farmtotabletx.com/,TX,Austin,1,Farm to Table Texas,-97.7834,30.2066
+205,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,1,1,0,1,0,0,cooperative,1,1,0,0,online marketplace,https://localroots.luluslocalfood.com,VA,Goochland,1,Local Roots Food Co-op/Lulus Local Food,-78.0424,37.8115
+206,0,1,0,0,1,0,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,.,1,0,1,0,.,https://www.relayfoods.com/welcome,VA,Charlottesville,1,Relay Foods,-77.175,38.8043
+207,0,1,0,0,0,0,0,1,1,0,1,1,1,0,0,1,1,1,1,1,1,1,0,0,1,0,LLC,1,0,1,0,.,http://www.offthevinemarket.com/store/pc/home.asp,VA,Williamsburg,1,Off the Vine Market Inc,-76.7006,37.2681
+208,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,0,1,0,LLC,1,0,1,0,.,http://www.cooppartners.coop/,VA,Windsor,1,"Coastal Farms, Inc",-76.738,36.8068
+210,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,1,0,0,LLC,1,0,0,0,.,http://aquafarmers.com/,VA,Farmville,1,Virginia Natural Fish Company,-78.4011,37.2967
+212,1,0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://www.thefarmtable.org/,VA,Glen Allen,1,The Farm Table,-76.5783,37.1985
+213,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,0,.,0,0,1,0,.,http://www.horseandbuggyproduce.com/,VA,Charlottesville,1,Horse and Buggy Produce,-78.4868,38.0214
+214,0,1,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,.,0,0,1,0,food product aggregation and distribution,http://asdevelop.org/,VA,Abingdon,1,Appalachian Harvest Network,-77.0445,38.8513
+215,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,B-corp,0,0,1,0,aggregator; distributor,http://blueridgeproduce.net,VA,Elkwood,1,Blue Ridge Produce Company,-77.8547,38.5121
+216,0,0,0,0,0,0,1,0,0,1,0,1,0,1,1,1,1,0,1,1,1,1,0,1,0,0,non-profit,0,0,1,0,Farm to business/institution model; distribution; educational farm,http://localfoodhub.org,VA,Charlottesville,1,Local Food Hub,-78.4868,38.0214
+218,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,0,1,0,0,,0,0,1,0,.,http://www.shenandoahfood.com/,VA,Rockbridge Baths,1,Shenandoah Food,-79.5101,37.9961
+219,1,1,1,0,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,0,1,0,0,.,1,0,1,0,.,http://www.intervale.org/,VT,Burlington,1,Intervale Center,-73.1844,44.4657
+220,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,0,0,1,0,LLC,1,0,1,0,.,http://farmerstoyou.com/,VT,Calais,1,Farmers to You,-72.5497,44.3731
+221,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,1,1,1,0,1,0,0,.,1,0,1,0,.,http://www.greenmountainfarmdirect.org/,VT,Newport,1,Green Mountain Farm Direct,-72.2495,44.9167
+223,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,cooperative,0,1,0,0,.,http://deeprootorganic.coop/deeproot/,VT,Johnson,1,Deep Root Organic Cooperative,-73.1956,44.4745
+224,1,0,0,1,0,1,1,0,0,0,0,1,1,0,,0,0,1,0,1,0,1,0,1,0,0,.,0,0,1,0,.,http://www.stjalfa.org/,VT,St. Johnsbury,1,Saint Johnsbury Local Food Alliance,-72.0132,44.4647
+226,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,0,0,0,.,0,0,1,0,.,http://www.foodworksvermont.org/,VT,Montpelier,1,Food Works at Two Rivers - Farm-to-Table Program,-72.4897,44.2288
+227,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,https://harvesttomarket.com/farmers-market/Windham-Farm-and-Food-Network,VT,Brattleboro,1,Windham Food and Farm Network,-72.5616,42.8785
+228,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,.,0,0,1,0,.,http://www.vtqualitymeats.com/,VT,Rutland,1,Vermont Quality Meats,-73.0369,43.5939
+229,0,0,0,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,1,1,1,1,0,1,0,0,.,0,0,0,1,.,http://www.screaminridgefarm.com/,VT,Montpelier,1,Screamin' Ridge Farm,-72.5699,44.2569
+230,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,cooperative,1,1,0,1,.,http://okanoganproducers.org/,WA,Okanogan,1,Okanogan Producers Marketing Association,-119.7033,48.2836
+231,1,1,1,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,0,0,1,0,.,1,0,1,0,multi-farm direct-to-consumer business chains,http://www.fullcircle.com/,WA,Carnation,1,Full Circle Farm,47.6479,-121.914
+232,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,0,1,0,0,.,1,0,1,0,.,N/A,WA,Chewelah,1,Northwest Farm Fresh,-117.7166,48.2791
+217,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,LLC,0,0,1,0,.,http://ecofriendly.com/,VA,Moneta,1,EcoFriendly Foods,-79.596854,37.213644
+209,0,0,1,0,0,0,0,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,0,0,1,0,,1,0,1,0,online marketplace,https://falllinefarms.luluslocalfood.com,VA,Richmond,1,Fall Line Farms/Lulus Local Food,-77.476009,37.531399
+211,1,0,0,1,0,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,non-profit,0,0,1,0,farm; mobile market; food hub; farm-to-school; veteran farmer program,http://arcadiafood.org,VA,Alexandria,1,Arcadia Center for Sustainable Food & Agriculture,-77.139555,38.71746
+225,0,1,0,0,0,0,0,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://madriverfoodhub.com/,VT,Waitsfield,1,Mad River Food Hub,-72.840246,44.186655
+233,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,1,1,1,1,0,0,1,0,.,1,0,0,0,box scheme,http://www.acmefarmsandkitchen.com,WA,Acme,1,Acme Farms and Kitchen,-121.413,45.7903
+234,0,1,0,0,0,0,1,0,1,1,0,1,1,0,0,1,1,0,1,1,1,1,0,1,0,0,non-profit,0,0,1,1,.,http://www.seattletilth.org/,WA,Seattle,1,Seattle Tilth,-122.3746,47.6462
+235,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,non-profit,0,0,1,0,"food hub, aggregation, distribution",http://www.21acres.org/farm-to-table/regional-food-hub-at-21-acres,WA,Woodinville,1,21 Acres Center for Local Food and Sustainable Living Food Hub,-122.2113,47.7657
+236,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,.,0,0,1,0,multi-farm direct-to-wholesale food business chains,http://www.shepherdsgrain.com/,WA,Spokane,1,Shepard's Grain,-117.536,47.7846
+237,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://www.vivafarms.org/,WA,Mt. Vernon,1,Viva Farms,-122.3392,48.4176
+238,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,1,0,1,0,0,.,0,0,0,1,.,http://www.growingwashington.org/,WA,Bellingham,1,Growing Washington,-122.5046,48.7573
+241,0,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,0,1,0,0,.,1,1,1,0,.,https://foodclub.org/driftless_cooption/login,WI,Viroqua,1,Driftless Co-Option,-90.8569,43.6526
+242,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,1,0,1,0,0,cooperative,1,1,0,1,local grocery; food co-op; online CSA,http://localfoodmarketplace.com/auburndale/Default.aspx,WI,Auburndale,1,Auburndale Food Cooperative,-90.0142,44.6304
+243,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,1,0,0,non-profit,1,0,1,0,online wholesaler marketplace,https://appleton.localorbit.com/users/sign_in,WI,Appleton,1,Appleton Food Hub,-88.4001,44.2885
+244,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,LLC,1,0,0,0,multi-farm direct-to-consumer business chains,http://www.goodearthfarms.com/,WI,Milladore,1,Good Earth Farms,-89.8548,44.6041
+245,0,1,0,0,0,1,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,0,"multi-stakeholder cooperative (producers, producer groups, processors, distributors, buyers and co-op workers)",0,1,1,0,aggregator; wholesale distributor; farm-to-institution,http://www.fifthseasoncoop.com,WI,Viroqua,1,Fifth Season Cooperative,-90.9651,43.4716
+246,0,1,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,1,cooperative,0,1,1,0,value-added food production,https://www.farmers.coop/about-us/,WI,Westby,1,Cooperative Regions of Organic Producer Pools (CROPP) aka Organic Valley and Organic Prairie,-90.212,44.6199
+247,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,1,1,0,1,0,0,"multi-stakeholder cooperative (producers, founders, organizational partners, and community supporters)",0,1,1,0,aggregator; wholesale distributor,http://wifoodhub.com,WI,Madison,1,Wisconsin Food Hub Cooperative,-89.3601,43.0928
+248,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,1,0,1,0,0,member cooperative,0,1,0,1,CSA; wholesaler; distributor; producers cooperative,http://bayfieldfoods.org,WI,Washburn,1,Bayfield Regional Food Producers Coop,-90.8902,46.6742
+249,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,0,1,0,0,food cooperative,0,1,0,0,.,http://chequamegonfoodcoop.com/,WI,Ashland,1,Chequamegon Food Co-op,-90.4929,46.0148
+250,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,.,0,0,1,0,.,http://neesvigs.co/,WI,Windsor,1,"Neesvig's, Inc",-89.2384,43.1874
+251,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,1,0,.,http://parrfectionproduce.com/,WI,Albany,1,Parrfection Produce,-88.2742,43.0443
+252,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,0,1,0,0,.,0,0,0,1,.,http://www.neuerthwormfarm.com/,WI,Reedsburg,1,Wisconsin Home Harvest,-89.8406,43.5633
+253,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,1,0,1,1,0,1,0,1,0,0,.,1,1,0,0,.,https://www.localfoodmarketplace.com/monroe/,WV,Union,1,Monroe Farm Market Cooperative,-79.1516,39.2143
+254,0,0,0,0,1,1,0,0,0,1,0,0,1,1,1,1,1,0,1,1,1,1,0,1,0,0,.,0,0,1,0,.,http://www.wvfarm2u.org/On-the-Farm/Fish-Hawk-Acres.aspx,WV,Rock Cave,1,Fish Hawk Acres,-79.9087,39.5033
+255,,,,,,,,,,,,1,1,1,,,1,0,1,0,,1,1,,,,producer-consumer cooperative,1,1,0,0,retail exchange; aggregator; delivery,http://www.highplainsfood.org,CO,Denver,1,High Plains Food Coop,-104.9903,39.7392
+256,,,,,,,,,,,,,,,,,,,,,,,,,,,.,,,,,.,http://www.greatbasinfood.coop/,NV,Reno,1,Great Basin Community Food Cooperative/Distributors of Regional and Organic Produce and Products,-119.8138,39.5296
+257,0,0,0,0,1,0,0,0,0,1,0,1,1,1,,1,1,0,1,1,1,1,1,0,0,0,cooperative,0,0,1,,.,http://localrootswooster.com/,OH,Wooster,1,Local Roots Market & Café (Wooster Local Foods Cooperative),-81.9499,40.7974
+18,0,1,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,b corp,0,0,1,0,.,http://www.veritablevegetable.com/,CA,San Francisco,1,Veritable Vegetable,-122.382759,37.750453
+22,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,.,0,0,1,0,.,http://www.rescue.org/us-program/us-san-diego-ca/food-hub,CA,San Diego,1,New Roots Food Hub at the International Rescue Committee (IRC),-117.082149,32.744264
+87,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,.,0,0,0,0,.,http://www.sustainablenantucket.org/,MA,Nantucket,1,Sustainable Nantucket's Farmers & Artisans Market,-70.101582,41.284137
+222,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,1,1,0,0,1,0,private,1,0,1,0,wholesaler,http://www.blackriverproduce.com,VT,North Springfield,1,Black River Produce,-72.516584,43.331441
+174,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,1,0,1,1,0,1,1,0,0,0,non-profit,1,0,1,1,"CSA, wholesale distributor",http://www.adelantemujeres.org/agriculture/,OR,Forest Grove,1,Adelante Mujeres Distributor,-123.114426,45.520654
+102,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,.,0,1,1,0,multi-farm direct-to-consumer business chains,http://www.cooppartners.coop/,MN,St. Paul,1,Co-op Partners Warehouse,-93.190137,44.963939
+36,1,1,0,1,0,0,0,0,1,0,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,.,1,0,1,0,.,http://www.farmfresh2u.us/,FL,Longwood,1,FarmFresh2U,-81.362541,28.696441
+136,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,.,0,1,0,0,.,http://www.nhcommunityseafood.com/,NH,Portsmouth,1,NH Community Seafood,-70.748916,43.07569

@@ -9,7 +9,7 @@
     <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
     <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/1.0.1/simple_statistics.min.js'></script>
+
 
     <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
@@ -78,34 +78,62 @@
         var map = L.map('map', options);
 
         var tiles = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-
             maxZoom: 18,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-
 
         $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM sites', function (data) {
             console.log(data); // you have access to the geojson data here!
 
             var vbscs = L.geoJson(data).addTo(map); // and you can simply use that GeoJSON 
 
-            function drawMap(schoolData) {
-                var girls = L.geoJson(schoolData, {
+            function drawMap(types) { //not sure how to access
+                var coop = L.geoJson(types, { //is if statement needed because of 0 and 1 data structure? 
 
-                    pointToLayer: function (feature, latlng) {
+                    pointToLayer: function (properties, latlng) {
                         return L.circleMarker(latlng, {
                             color: '#D96D02',
                             opacity: 1,
-                            weight: 2,
+                            weight: 2, //Need to add size for each
                             fillOpacity: 0,
 
                         });
                     }
                 }).addTo(map);
 
-                var boys = L.geoJson(schoolData, {
+                var csa = L.geoJson(types, {
 
-                    pointToLayer: function (feature, latlng) {
+                    pointToLayer: function (properties, latlng) {
+
+                        return L.circleMarker(latlng, {
+                            color: '#6E77B0', //change color
+                            opacity: 1,
+                            weight: 2,
+                            fillOpacity: 0,
+
+
+                        });
+                    }
+                }).addTo(map);
+
+                var online = L.geoJson(types, {
+
+                    pointToLayer: function (properties, latlng) {
+
+                        return L.circleMarker(latlng, {
+                            color: '#6E77B0', //change color
+                            opacity: 1,
+                            weight: 2,
+                            fillOpacity: 0,
+
+
+                        });
+                    }
+                }).addTo(map);
+
+                var foodhub = L.geoJson(types, {
+
+                    pointToLayer: function (properties, latlng) {
 
                         return L.circleMarker(latlng, {
                             color: '#6E77B0',
@@ -117,8 +145,7 @@
                         });
                     }
                 }).addTo(map);
-                updateSymbols(girls, boys, 1);
-                sequenceUI(girls, boys);
+
             }
 
             var currentChecked = [];
