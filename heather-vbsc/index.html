@@ -46,161 +46,170 @@
     <div id="controls">
         <h2>VBSC Type</h2>
 
-        <label>
-            <input type="checkbox" id="cbox1" value="cooperativ">Cooperative
+        <div id="types">
+            <label><input type="checkbox" value="cooperativ" checked>Cooperative</label>
             <br>
-            <input type="checkbox" id="cbox1" value="csa">CSA
+            <label><input type="checkbox" value="csa" checked>CSA</label>
             <br>
-            <input type="checkbox" id="cbox2" value="food_hub">Food Hub
+            <label><input type="checkbox" value="food_hub" checked>Food Hub</label>
             <br>
-            <input type="checkbox" id="cbox2" value="online_de">Online Delivery
-        </label>
+            <label><input type="checkbox" value="online_de" checked>Online Delivery</label>
+        </div>
 
-        <h3>Products Available</h3>
+        <h2>Products Available</h2>
 
-        <label>
-            <input type="checkbox" id="cbox1" value="eggs">eggs
+        <div id="products">
+            <label><input type="checkbox" value="eggs" checked>eggs</label>
             <br>
-            <input type="checkbox" id="cbox1" value="meat">meat
+            <label><input type="checkbox" value="meat" checked>meat</label>
             <br>
-            <input type="checkbox" id="cbox2" value="dairy">dairy
-        </label>
-
+            <label><input type="checkbox" value="dairy" checked>dairy</label>
+        </div>
     </div>
 
-    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-    <script>
-        var options = {
-            center: [37.8, -85.8],
-            zoom: 4,
-            zoomControl: true
-        }
-        var map = L.map('map', options);
+<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script>
+    var options = {
+        center: [37.8, -85.8],
+        zoom: 4,
+        zoomControl: true
+    }
+    var map = L.map('map', options);
+    
+    var vbscs, states;  // global variables to reference 
+    
+    var removedLayers = L.layerGroup();
+    
+    var currentTypes = ['csa', 'online_de', 'food_hub', 'cooperativ'];
+    
+    var currentProducts = ['eggs', 'meat', 'dairy'];
 
-        var tiles = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+    var tiles = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
 
-        $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM sites', function (data) {
-            console.log(data); // you have access to the geojson data here!
+    $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM sites', function (data) {
+        
+        $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM state_kml', function (statesData) {
+ 
+            drawMap(data, statesData);
+            
+        });
 
-            var vbscs = L.geoJson(data).addTo(map); // and you can simply use that GeoJSON 
-
-            function drawMap(types) { //not sure how to access
-                var coop = L.geoJson(types, { //is if statement needed because of 0 and 1 data structure? 
-
-                    pointToLayer: function (properties, latlng) {
-                        return L.circleMarker(latlng, {
-                            color: '#D96D02',
-                            opacity: 1,
-                            weight: 2, //Need to add size for each
-                            fillOpacity: 0,
-
-                        });
-                    }
-                }).addTo(map);
-
-                var csa = L.geoJson(types, {
-
-                    pointToLayer: function (properties, latlng) {
-
-                        return L.circleMarker(latlng, {
-                            color: '#6E77B0', //change color
-                            opacity: 1,
-                            weight: 2,
-                            fillOpacity: 0,
-
-
-                        });
-                    }
-                }).addTo(map);
-
-                var online = L.geoJson(types, {
-
-                    pointToLayer: function (properties, latlng) {
-
-                        return L.circleMarker(latlng, {
-                            color: '#6E77B0', //change color
-                            opacity: 1,
-                            weight: 2,
-                            fillOpacity: 0,
-
-
-                        });
-                    }
-                }).addTo(map);
-
-                var foodhub = L.geoJson(types, {
-
-                    pointToLayer: function (properties, latlng) {
-
-                        return L.circleMarker(latlng, {
-                            color: '#6E77B0',
-                            opacity: 1,
-                            weight: 2,
-                            fillOpacity: 0,
-
-
-                        });
-                    }
-                }).addTo(map);
-
-            }
-
-            var currentChecked = [];
-
-            $('input').on('change', function () {
-
-                var val = $(this).val();
-
-                if ($(this).attr('checked')) {
-                    currentChecked.push(val);
-                    filterSelection(currentChecked);
-                } else {
-                    var i = currentChecked.indexOf(val);
-                    if (val != 1) {
-                        currentChecked.splice(i, 1);
-                    }
-                    filterSelection(currentChecked);
-                }
-
-            });
-
-            var removedLayers = L.layerGroup();
-
-
-            function filterSelection(vals) {
-
-                // first add any layers from the removed layers
-                // and clear the removedLayers
-                removedLayers.eachLayer(function (layer) {
-
-                    map.addLayer(layer);
-                    removedLayers.removeLayer(layer);
+    });
+    function drawMap(data, statesData) { //not sure how to access
+        
+        
+        states = L.geoJson(statesData).addTo(map);
+        
+        vbscs = L.geoJson(data, {
+             pointToLayer : function (properties, latlng) {
+                return L.circleMarker(latlng, {
+                    opacity: 1,
+                    weight: 2, //Need to add size for each
+                    fillOpacity: 1,
+                    radius: 4,
+                    stroke: false
 
                 });
-
-                // then loop through our currently displayed properties
-                // add them to the removedLayers group and remove from map
-                for (var i = 0; i < vals.length; i++) {
-
-                    vbscs.eachLayer(function (layer) {
-
-                        if (layer.feature.properties[vals[i]] == false) {
-
-                            removedLayers.addLayer(layer);
-                            map.removeLayer(layer);
-
-                        }
-
-                    });
-
+            },
+            style : function(feature) {
+               
+                for(var prop in feature.properties) {
+                    
+                    if(prop === 'csa' && feature.properties['csa'] === "1") {
+                        return { color: '#D96D02' };
+                    } else if(prop === 'online_de' && feature.properties['online_de'] === "1") {
+                        return { color: 'green' };
+                    } else if(prop === 'food_hub' && feature.properties['food_hub'] === "1") {
+                        return { color: 'blue' };
+                    } else if(prop === 'cooperativ' && feature.properties['cooperativ'] === "1") {
+                        return { color: 'orange' };
+                    }
+                    
                 }
+                 
+            }
+        }).addTo(map);
+        
+        addUI();
+            
+    }
+    
+    function addUI() {
+        
+        $('#types input').change(function () {
 
+            var val = $(this).val();
+
+            if(this.checked) {
+                currentTypes.push(val);
+                filterSelection('type');
+            } else {
+                var i = currentTypes.indexOf(val);
+                if (val != 1) {
+                    currentTypes.splice(i, 1);
+                }
+                filterSelection('type');
+            }
+         });
+        
+        $('#products input').change(function () {
+
+            var val = $(this).val();
+            
+            if(this.checked) {
+                currentProducts.push(val);
+                filterSelection('product');
+            } else {
+                var i = currentChecked.indexOf(val);
+                if (val != 1) {
+                    currentProducts.splice(i, 1);
+                    filterSelection('product');
+                }  
             }
 
-        });
+        }); 
+        
+    } // end addUI
+
+
+    function filterSelection(cat) {
+        
+        if(cat == 'type') {
+            
+            vbscs.eachLayer(function(layer) {
+               removedLayers.addLayer(layer);
+               vbscs.removeLayer(layer); 
+            })
+
+            removedLayers.eachLayer(function(layer) {
+
+               currentTypes.forEach(function(type) {
+
+                   if(layer.feature.properties[type] == true) {
+
+                        vbscs.addLayer(layer);
+                       removedLayers.removeLayer(layer);
+                   }
+               }) 
+            });
+            
+        } 
+        
+        if(cat == 'product') {
+            
+            // filter the prouducts here
+            
+
+        }
+            
+       
+
+    }
+
+
     </script>
 </body>
 
