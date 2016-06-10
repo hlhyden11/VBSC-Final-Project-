@@ -220,8 +220,7 @@
                     
                 }
   
-                
-            }   
+            }
             
         }).addTo(map);
         
@@ -238,7 +237,14 @@
                      fillColor: 'green'
         
                  });
-             }
+             },
+             onEachFeature: function(feature, layer) {
+
+                  var popup = feature.properties.business_n;
+                  layer.bindPopup(popup);
+
+
+                }
          }).addTo(map);
 
         
