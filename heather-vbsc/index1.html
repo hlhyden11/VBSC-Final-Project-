@@ -99,40 +99,12 @@
             maxZoom: 18,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
+
         $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM sites', function (data) {
 
-            /* var cartoCSS = '#state_kml{' +
-                    'polygon-fill: steelblue;' +
-                    'polygon-opacity: 0.8;' +
-                    'polygon-comp-op: lighten;' +
-                    'line-color: #FFF;' +
-                    'line-width: 0.5;' +
-                    'line-opacity: 1;' +
-                    '}';
-
-                var sourceObject = {
-                    user_name: 'hlhyden1',
-                    type: 'cartodb',
-                    sublayers: [{
-                            sql: "SELECT * FROM state_kml",
-                            cartocss: cartoCSS
-            }
-        ]
-                }
-                cartodb.createLayer(map, sourceObject).addTo(map);*/
 
             $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM state_kml', function (statesData) {
 
-                L.geoJson(statesData, {
-                    style: function (feature) {
-                        return {
-                            color: '#dddddd',
-                            weight: 1,
-                            fillOpacity: 1,
-                            fillColor: '#1f78b4'
-                        };
-                    }
-                }).addTo(map);
 
                 drawMap(data, statesData);
 
@@ -141,8 +113,6 @@
 
         function drawMap(data, statesData) { //not sure how to access
 
-
-            states = L.geoJson(statesData).addTo(map);
 
             vbscs = L.geoJson(data, {
                 pointToLayer: function (properties, latlng) {
@@ -156,7 +126,7 @@
                 },
                 style: function (feature) {
 
-                    for (var prop in feature.properties) {
+                    for (var prop in feature.properties) { //can we add another loop for size styling? 
 
                         if (prop === 'csa' && feature.properties['csa'] === "1") {
                             return {
@@ -183,67 +153,148 @@
 
             addUI();
 
-        }
+            function drawStates(states) {
+                dataLayer = L.geoJson(states, {
 
-        function addUI() {
-
-            $('#types input').change(function () {
-                var val = $(this).val();
-                if (this.checked) {
-                    currentTypes.push(val);
-                    filterSelection('type');
-                } else {
-                    var i = currentTypes.indexOf(val);
-                    if (val != 1) {
-                        currentTypes.splice(i, 1);
-                    }
-                    filterSelection('type');
-                }
-            });
-
-            $('#products input').change(function () {
-                var val = $(this).val();
-
-                if (this.checked) {
-                    currentProducts.push(val);
-                    filterSelection('product');
-                } else {
-                    var i = currentChecked.indexOf(val);
-                    if (val != 1) {
-                        currentProducts.splice(i, 1);
-                        filterSelection('product');
-                    }
-                }
-            });
-
-        } // end addUI
-        function filterSelection(cat) {
-
-            if (cat == 'type') {
-
-                vbscs.eachLayer(function (layer) {
-                    removedLayers.addLayer(layer);
-                    vbscs.removeLayer(layer);
-                })
-                removedLayers.eachLayer(function (layer) {
-                    currentTypes.forEach(function (type) {
-                        if (layer.feature.properties[type] == true) {
-                            vbscs.addLayer(layer);
-                            removedLayers.removeLayer(layer);
+                    // initially set polygon border and fill properties
+                    style: function (feature) {
+                            return {
+                                color: '#A9A9A9',
+                                weight: 1,
+                                fillOpacity: 1,
+                                fillColor: '#1f78b4'
+                            }
                         }
-                    })
+                        // add polygons to the map    
+                }).addTo(map).bringToBack();
+                // fires the function to update the map for user functionality
+                updateMap();
+            }
+
+            function updateMap() {
+
+                var breaks = getClassBreaks();
+
+                dataLayer.eachLayer(function (layer) {
+                    layer.setStyle({
+                        color: '#A9A9A9',
+                        weight: 1,
+                        fillColor: getColor(layer.feature.properties.count, breaks),
+                        fillOpacity: 1,
+                    });
+
+                    var props = layer.feature.properties;
+                });
+                updateLegend(breaks);
+            }
+
+            /*function updateLegend(breaks) {
+
+                var legend = $('.legend').html("<h3>State VBSC Count: " + (Number(density)) + "</h3><ul>");
+
+                for (var i = 0; i < breaks.length - 1; i++) {
+
+                    var color = getColor(breaks[i + 1], breaks);
+
+                    $('.legend ul').append('<li><span style="background:' + color + '"></span> ' + breaks[i] + ' &mdash; ' + breaks[i + 1] + '</li>');
+                }
+
+                legend.append("</ul>");
+            }*/
+
+            function getClassBreaks() {
+
+                var values = [];
+
+                dataLayer.eachLayer(function (layer) {
+                    var value = layer.feature.properties.count;
+
+                    values.push(value);
                 });
 
+                var clusters = ss.ckmeans(values, 5);
+
+                var breaks = clusters.map(function (cluster) {
+                    return [cluster[0], cluster.pop()];
+                });
+
+                return breaks;
             }
 
-            if (cat == 'product') {
+            function getColor(d, breaks) {
 
-                // filter the prouducts here
-
+                if (d <= breaks[0][1]) {
+                    return '#ca641c';
+                } else if (d <= breaks[1][1]) {
+                    return '#9d4e15';
+                } else if (d <= breaks[2][1]) {
+                    return '#874312';
+                } else if (d <= breaks[3][1]) {
+                    return '#5a2d0c'
+                } else if (d <= breaks[4][1]) {
+                    return '#2d1606'
+                }
             }
 
 
-        }
+            function addUI() {
+
+                $('#types input').change(function () {
+                    var val = $(this).val();
+                    if (this.checked) {
+                        currentTypes.push(val);
+                        filterSelection('type');
+                    } else {
+                        var i = currentTypes.indexOf(val);
+                        if (val != 1) {
+                            currentTypes.splice(i, 1);
+                        }
+                        filterSelection('type');
+                    }
+                });
+
+                $('#products input').change(function () {
+                    var val = $(this).val();
+
+                    if (this.checked) {
+                        currentProducts.push(val);
+                        filterSelection('product');
+                    } else {
+                        var i = currentChecked.indexOf(val);
+                        if (val != 1) {
+                            currentProducts.splice(i, 1);
+                            filterSelection('product');
+                        }
+                    }
+                });
+
+            } // end addUI
+            function filterSelection(cat) {
+
+                if (cat == 'type') {
+
+                    vbscs.eachLayer(function (layer) {
+                        removedLayers.addLayer(layer);
+                        vbscs.removeLayer(layer);
+                    })
+                    removedLayers.eachLayer(function (layer) {
+                        currentTypes.forEach(function (type) {
+                            if (layer.feature.properties[type] == true) {
+                                vbscs.addLayer(layer);
+                                removedLayers.removeLayer(layer);
+                            }
+                        })
+                    });
+
+                }
+
+                if (cat == 'product') {
+
+                    // filter the prouducts here
+
+                }
+
+            }
     </script>
 </body>
 
