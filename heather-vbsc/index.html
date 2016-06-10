@@ -23,11 +23,11 @@
             padding: 0;
             margin: 0;
         }
-        
+
         #map {
             width: 60%;
         }
-        
+
         #controls {
             width: 40%;
             position: absolute;
@@ -75,14 +75,11 @@
         zoomControl: true
     }
     var map = L.map('map', options);
-    
-    var vbscs, states;  // global variables to reference 
-    
+
+    var vbscs, states;  // global variables to reference
+
     var removedLayers = L.layerGroup();
-    
-    var currentTypes = ['csa', 'online_de', 'food_hub', 'cooperativ'];
-    
-    var currentProducts = ['eggs', 'meat', 'dairy'];
+
 
     var tiles = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
         maxZoom: 18,
@@ -90,55 +87,89 @@
     }).addTo(map);
 
     $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM sites', function (data) {
-        
+
         $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM state_kml', function (statesData) {
- 
+
             drawMap(data, statesData);
-            
+
         });
 
     });
+    
+    function getColor(count) {
+        
+        if(count == null) {
+            return 'gray';
+        }
+        
+        if(count === 0) {
+            return 'blue';
+        }
+        
+        return count <= 2 ? "#ffffb2" :
+               count <= 7 ? "#fecc5c" :
+               count <= 11 ? "#fd8d3c" :
+               count <= 16 ? "#f03b20" :
+                           "#bd0026"
+  
+    }
     function drawMap(data, statesData) { //not sure how to access
-        
-        
-        states = L.geoJson(statesData).addTo(map);
-        
-        vbscs = L.geoJson(data, {
-             pointToLayer : function (properties, latlng) {
-                return L.circleMarker(latlng, {
-                    opacity: 1,
-                    weight: 2, //Need to add size for each
-                    fillOpacity: 1,
-                    radius: 4,
-                    stroke: false
 
-                });
-            },
+
+        states = L.geoJson(statesData, {
+            
             style : function(feature) {
-               
-                for(var prop in feature.properties) {
+                
+                return {
                     
-                    if(prop === 'csa' && feature.properties['csa'] === "1") {
-                        return { color: '#D96D02' };
-                    } else if(prop === 'online_de' && feature.properties['online_de'] === "1") {
-                        return { color: 'green' };
-                    } else if(prop === 'food_hub' && feature.properties['food_hub'] === "1") {
-                        return { color: 'blue' };
-                    } else if(prop === 'cooperativ' && feature.properties['cooperativ'] === "1") {
-                        return { color: 'orange' };
-                    }
+                    color: 'white',
+                    weight: 3,
+                    fillOpacity: .8,
+                    fillColor: getColor(feature.properties.count)   
                     
                 }
-                 
-            }
-        }).addTo(map);
-        
-        addUI();
+  
+                
+            }   
             
+        }).addTo(map);
+
+        // vbscs = L.geoJson(data, {
+        //      pointToLayer : function (properties, latlng) {
+        //         return L.circleMarker(latlng, {
+        //             opacity: 1,
+        //             weight: 2, //Need to add size for each
+        //             fillOpacity: 1,
+        //             radius: 4,
+        //             stroke: false
+        //
+        //         });
+        //     },
+        //     style : function(feature) {
+        //
+        //         for(var prop in feature.properties) {
+        //
+        //             if(prop === 'csa' && feature.properties['csa'] === "1") {
+        //                 return { color: '#D96D02' };
+        //             } else if(prop === 'online_de' && feature.properties['online_de'] === "1") {
+        //                 return { color: 'green' };
+        //             } else if(prop === 'food_hub' && feature.properties['food_hub'] === "1") {
+        //                 return { color: 'blue' };
+        //             } else if(prop === 'cooperativ' && feature.properties['cooperativ'] === "1") {
+        //                 return { color: 'orange' };
+        //             }
+        //
+        //         }
+        //
+        //     }
+        // }).addTo(map);
+
+        addUI();
+
     }
-    
+
     function addUI() {
-        
+
         $('#types input').change(function () {
 
             var val = $(this).val();
@@ -154,11 +185,11 @@
                 filterSelection('type');
             }
          });
-        
+
         $('#products input').change(function () {
 
             var val = $(this).val();
-            
+
             if(this.checked) {
                 currentProducts.push(val);
                 filterSelection('product');
@@ -167,21 +198,21 @@
                 if (val != 1) {
                     currentProducts.splice(i, 1);
                     filterSelection('product');
-                }  
+                }
             }
 
-        }); 
-        
+        });
+
     } // end addUI
 
 
     function filterSelection(cat) {
-        
+
         if(cat == 'type') {
-            
+
             vbscs.eachLayer(function(layer) {
                removedLayers.addLayer(layer);
-               vbscs.removeLayer(layer); 
+               vbscs.removeLayer(layer);
             })
 
             removedLayers.eachLayer(function(layer) {
@@ -193,19 +224,19 @@
                         vbscs.addLayer(layer);
                        removedLayers.removeLayer(layer);
                    }
-               }) 
+               })
             });
-            
-        } 
-        
-        if(cat == 'product') {
-            
-            // filter the prouducts here
-            
 
         }
-            
-       
+
+        if(cat == 'product') {
+
+            // filter the prouducts here
+
+
+        }
+
+
 
     }
 
