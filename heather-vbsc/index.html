@@ -214,7 +214,7 @@
                     
                     color: 'white',
                     weight: 3,
-                    fillOpacity: .8,
+                    fillOpacity: 1,
                     //fillColor: getColor(feature.properties.count)  
                     fillColor: getColor(feature.properties.count/50, breaks)  
                     
@@ -227,41 +227,34 @@
         
         drawLegend(breaks);
 
-        // vbscs = L.geoJson(data, {
-        //      pointToLayer : function (properties, latlng) {
-        //         return L.circleMarker(latlng, {
-        //             opacity: 1,
-        //             weight: 2, //Need to add size for each
-        //             fillOpacity: 1,
-        //             radius: 4,
-        //             stroke: false
-        //
-        //         });
-        //     },
-        //     style : function(feature) {
-        //
-        //         for(var prop in feature.properties) {
-        //
-        //             if(prop === 'csa' && feature.properties['csa'] === "1") {
-        //                 return { color: '#D96D02' };
-        //             } else if(prop === 'online_de' && feature.properties['online_de'] === "1") {
-        //                 return { color: 'green' };
-        //             } else if(prop === 'food_hub' && feature.properties['food_hub'] === "1") {
-        //                 return { color: 'blue' };
-        //             } else if(prop === 'cooperativ' && feature.properties['cooperativ'] === "1") {
-        //                 return { color: 'orange' };
-        //             }
-        //
-        //         }
-        //
-        //     }
-        // }).addTo(map);
+         vbscs = L.geoJson(data, {
+              pointToLayer : function (properties, latlng) {
+                 return L.circleMarker(latlng, {
+                     opacity: 1,
+                     weight: 2,
+                     fillOpacity: 1,
+                     radius: 4,
+                     stroke: false,
+                     fillColor: 'green'
+        
+                 });
+             }
+         }).addTo(map);
 
+        
         addUI();
 
     }
 
     function addUI() {
+        
+        
+         var sourcesLayers = {
+            "VBSCs": vbscs,
+            "State Count": states
+        }
+        
+        L.control.layers(null, sourcesLayers, { collapsed:false }).addTo(map);
 
         $('#types input').change(function () {
 
