@@ -9,6 +9,7 @@
     <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
     <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/0.9.0/simple_statistics.min.js'></script>
 
 
     <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
@@ -25,17 +26,47 @@
         }
 
         #map {
-            width: 60%;
+            width: 80%;
         }
 
         #controls {
-            width: 40%;
+            width: 20%;
             position: absolute;
             right: 0;
             background: whitesmoke;
             top: 0;
             bottom: 0;
             padding: 15px;
+        }
+        .legend {
+            padding: 6px 8px;
+            font-size: 1em;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .legend h3 {
+            font-size: 1.1em;
+            font-weight: normal;
+            color: #001323;
+            margin: 0 0 10px 0;
+        }
+        .legend span {
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 0 10px 4px 0;
+        }
+        .legend label {
+            font-size: 1.1em;
+        }
+        .legend label:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .leaflet-right .leaflet-control {
+            margin-right: 40px;
         }
     </style>
 </head>
@@ -96,7 +127,7 @@
 
     });
     
-    function getColor(count) {
+    function getColor(count, breaks) {
         
         if(count == null) {
             return 'gray';
@@ -106,16 +137,75 @@
             return 'blue';
         }
         
-        return count <= 2 ? "#ffffb2" :
-               count <= 7 ? "#fecc5c" :
-               count <= 11 ? "#fd8d3c" :
-               count <= 16 ? "#f03b20" :
+        return count <= breaks[1] ? "#ffffb2" :
+               count <= breaks[2] ? "#fecc5c" :
+               count <= breaks[3] ? "#fd8d3c" :
+               count <= breaks[4] ? "#f03b20" :
                            "#bd0026"
   
     }
+    
+    function drawLegend(breaks) {
+        
+        var legend = L.control({position: 'bottomright'});
+
+        legend.onAdd = function () {
+
+            var div = L.DomUtil.create('div', 'legend');
+
+            div.innerHTML = "<h3>VBSCs per State</h3>";
+            
+            div.innerHTML +='<span style="background: blue"></span> ' +
+                   '<label>zero</label>';
+
+   
+             // for each of our breaks
+            for (var i = 1; i < breaks.length; i++) {
+                // determine the color associated with each break value,
+                // including the lower range value
+          
+                var color = getColor(breaks[i], breaks);
+
+                // concatenate a <span> tag styled with the color and the range values
+                // of that class and include a label with the low and a high ends of that class range
+                div.innerHTML +=
+                   '<span style="background:' + color + '"></span> ' +
+                   '<label>'+(breaks[i-1]) + ' &mdash; ' + 
+                    (breaks[i]) + '</label>';
+            }
+
+            return div;
+
+        };
+
+    legend.addTo(map);
+        
+        
+        
+    }
+    
+    function getBreaks(statesData) {
+        
+        var dataRange = [];
+        statesData.features.forEach(function(state) {
+            
+//            var val = state.properties.count/state.properties.farmers
+            var val = state.properties.count/50;
+            
+            dataRange.push(val)
+        })
+        
+        
+        var breaks = ss.jenks(dataRange,5);
+        
+        return breaks;
+        
+    }
+    
     function drawMap(data, statesData) { //not sure how to access
 
-
+        var breaks = getBreaks(statesData);
+       
         states = L.geoJson(statesData, {
             
             style : function(feature) {
@@ -125,7 +215,8 @@
                     color: 'white',
                     weight: 3,
                     fillOpacity: .8,
-                    fillColor: getColor(feature.properties.count)   
+                    //fillColor: getColor(feature.properties.count)  
+                    fillColor: getColor(feature.properties.count/50, breaks)  
                     
                 }
   
@@ -133,6 +224,8 @@
             }   
             
         }).addTo(map);
+        
+        drawLegend(breaks);
 
         // vbscs = L.geoJson(data, {
         //      pointToLayer : function (properties, latlng) {
