@@ -255,76 +255,47 @@
         }
         
         L.control.layers(null, sourcesLayers, { collapsed:false }).addTo(map);
+        
+        var currentChecked = [];
 
-        $('#types input').change(function () {
-
-            var val = $(this).val();
-
-            if(this.checked) {
-                currentTypes.push(val);
-                filterSelection('type');
-            } else {
-                var i = currentTypes.indexOf(val);
-                if (val != 1) {
-                    currentTypes.splice(i, 1);
-                }
-                filterSelection('type');
-            }
-         });
-
-        $('#products input').change(function () {
-
-            var val = $(this).val();
-
-            if(this.checked) {
-                currentProducts.push(val);
-                filterSelection('product');
-            } else {
-                var i = currentChecked.indexOf(val);
-                if (val != 1) {
-                    currentProducts.splice(i, 1);
-                    filterSelection('product');
-                }
-            }
-
-        });
+//         $('input').on('change', function () {
+//                var val = $(this).val();
+//       
+//                if (this.checked) {
+//                    currentChecked.push(val);
+//                    filterSelection(currentChecked);
+//                } else {
+//                    var i = currentChecked.indexOf(val);
+//                    if (val != 1) {
+//                        currentChecked.splice(i, 1);
+//                    }
+//                    filterSelection(currentChecked);
+//                }
+//            });
 
     } // end addUI
 
 
-    function filterSelection(cat) {
-
-        if(cat == 'type') {
-
-            vbscs.eachLayer(function(layer) {
-               removedLayers.addLayer(layer);
-               vbscs.removeLayer(layer);
-            })
-
-            removedLayers.eachLayer(function(layer) {
-
-               currentTypes.forEach(function(type) {
-
-                   if(layer.feature.properties[type] == true) {
-
-                        vbscs.addLayer(layer);
-                       removedLayers.removeLayer(layer);
-                   }
-               })
+   function filterSelection(vals) {
+       console.log(vals)
+        // first add any layers from the removed layers
+        // and clear the removedLayers
+        removedLayers.eachLayer(function (layer) {
+            vbscs.addLayer(layer);
+            removedLayers.removeLayer(layer);
+        });
+        // then loop through our currently displayed properties
+        // add them to the removedLayers group and remove from map
+        for (var i = 0; i < vals.length; i++) {
+            vbscs.eachLayer(function (layer) {
+                if (layer.feature.properties[vals[i]] == false) {
+                    removedLayers.addLayer(layer);
+                    vbscs.removeLayer(layer);
+                }
             });
-
         }
-
-        if(cat == 'product') {
-
-            // filter the prouducts here
-
-
-        }
-
-
-
     }
+
 
 
     </script>
