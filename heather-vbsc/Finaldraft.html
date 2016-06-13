@@ -10,14 +10,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
     <style>
-        /*      body {
-            margin: 0;
-            padding: 0;
-            background: whitesmoke;
-            font-family: Lato, sans-serif;
-            color: #0D0000;
-        }*/
-        
+      
          body {
             margin: 0;
             padding: 0;
@@ -25,55 +18,35 @@
             font-family: "Work Sans", sans-serif;
         }
         
-        #side-panel {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 33%;
-            background: whitesmoke;
-            border-right: 2px solid #1C9976;
-            overflow-y: scroll;
-        }
-        
         h1 {
             padding: 8px 25px 8px 15px;
             margin: 0;
             background: #1C9976;
-            color: whitesmoke;
-            font-weight: 400;
-            font-size: 1.5em;
-            text-align: right;
+            color:black;
+            font-weight: 500;
+            font-size: 1.7em;
+            text-align: left;
         }
         
         h2 {
             margin: 0;
             padding: 8px 25px 8px 15px;
-            color: #1C9976;
-            font-weight: 500;
-            font-size: 1.2em;
+            color: #cc0066;
+            font-weight: 700;
+            font-size: 1.5em;
             text-align: left;
         }
         
         h3 {
             margin: 0;
             padding: 8px 25px 8px 15px;
-            color: #1C9976;
+            color: #black;
             font-weight: 500;
-            font-size: 1.2em;
+            font-size: 1.4em;
             text-align: left;
             
         }
         
-     /*   label {
-            margin: 0;
-            padding: 8px 25px 8px 15px;
-            color: #1C9976;
-            font-weight: 500;
-            font-size: 1.2em;
-            text-align: left;
-            
-        }*/
         
         #side-panel p {
             margin: 8px 0 4px;
@@ -90,7 +63,7 @@
             width: 67%;
         }
         
-        /* #map {
+       /*  #map {
             width: 60%;
             height: 540px;
             margin: 10px 10%;
@@ -104,13 +77,12 @@
             top: 0;
             bottom: 0;
             width: 33%;
-            background: whitesmoke;
+            background: #00cc99;
             border-right: 2px solid #1C9976;
             overflow-y: scroll;
         }
         
        footer {
-            position:bottom
             padding: 6px 10%;
             width: 80%;
         }
@@ -119,40 +91,78 @@
             font-size: 1em;
             color: #001323;
         }
+        
     </style>
 </head>
 
-
 <body>
-
+    
     <div id="map"></div>
+    
     <div id="side-panel">
-        <h1>Student attrition rates in Kenya</h1>
-        <h2>2014 enrollment rates for boys and girls</h2>
+        <h1>Agricultural Value-Based Supply Chains</h1>
+        <h2>Filter by Type, Claims and Products Available</h2>
 
         <h3>VBSC Type</h3>
-            <label>
-                
-            <br>
+         <label>
             <input type="checkbox" id="cbox1" value="cooperativ">Cooperative
             <br>
             <input type="checkbox" id="cbox2" value="csa">CSA
             <br>
             <input type="checkbox" id="cbox3" value="food_hub">Food Hub
             <br>
-            <input type="checkbox" id="cbox4" value="online_de">Online Delivery </label>
+            <input type="checkbox" id="cbox4" value="online_de">Online Delivery
+        </label>
+        
+        <h3>Value Claims</h3>
+            <label>
+            <input type="checkbox" id="cbox5" value="accessabil">Accessibility
+            <br>
+            <input type="checkbox" id="cbox6" value="affordabil">Affordability
+            <br>
+            <input type="checkbox" id="cbox7" value="community">Community
+            <br>
+            <input type="checkbox" id="cbox8" value="education">Education
+            <br>
+            <input type="checkbox" id="cbox9" value="fair">Fair Trade
+            <br>
+            <input type="checkbox" id="cbox10" value="fresh">Fresh
+            <br>
+            <input type="checkbox" id="cbox11" value="health_nut">Health and Nutrition
+            <br>
+            <input type="checkbox" id="cbox12" value="humane_an">Humane:animals
+            <br>
+            <input type="checkbox" id="cbox13" value="organic">Organic
+            <br>
+            <input type="checkbox" id="cbox14" value="sustainabl">Sustainability
+            <br>
+            <input type="checkbox" id="cbox15" value="transparen">Transparency
+            <br>
+            <input type="checkbox" id="cbox16" value="ahsf">Food Safety    
+        
+        </label>
 
         <h3>Products Available</h3>
         <label>
-            <br>
             <input type="checkbox" id="cbox1" value="eggs">eggs
             <br>
             <input type="checkbox" id="cbox2" value="meat">meat
             <br>
-            <input type="checkbox" id="cbox3" value="dairy">dairy </label>
+            <input type="checkbox" id="cbox3" value="dairy">dairy 
+            <br>
+            <input type="checkbox" id="cbox4" value="seafood">seafood
+            <br>
+            <input type="checkbox" id="cbox5" value="preserves">preserves/honey
+            <br>
+            <input type="checkbox" id="cbox6" value="value_adde">value-added/dry-goods 
+            <br>
+            <input type="checkbox" id="cbox6" value="produce">produce 
         
+        </label>
          </div>
-    
+    <footer>
+    <p>map info</p>
+    </footer>
 
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 
@@ -174,8 +184,26 @@
             console.log(data); // you have access to the geojson data here!
 
 
-            var vbscs = L.geoJson(data).addTo(map); // and you can simply use that GeoJSON 
+            var vbscs = L.geoJson(data, {
+                pointToLayer: function (properties, latlng) {
+                    return L.circleMarker(latlng, {
+                        opacity: 1,
+                        weight: 1,
+                        fillOpacity: .6,
+                        radius: 6,
+                        stroke: true,
+                        fillColor: 'green'
 
+                    });
+                },
+                onEachFeature: function (feature, layer) {
+
+                    var popup = '<b>Business Name:  </b>'+ feature.properties.business_n + '<br><b>Website:  </b>'+  feature.properties.business_w;
+
+                    layer.bindPopup(popup);
+
+                }
+            }).addTo(map);
 
             var currentChecked = [];
             $('input').on('change', function () {
