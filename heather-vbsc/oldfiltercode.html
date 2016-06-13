@@ -10,26 +10,114 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
     <style>
-        html,
-        body,
-        #map {
-            height: 100%;
-            padding: 0;
+        /*      body {
             margin: 0;
-        }
-        
-        #map {
-            width: 60%;
-        }
-        
-        #controls {
-            width: 40%;
-            position: absolute;
-            right: 0;
+            padding: 0;
             background: whitesmoke;
+            font-family: Lato, sans-serif;
+            color: #0D0000;
+        }*/
+        
+         body {
+            margin: 0;
+            padding: 0;
+            background: whitesmoke;
+            font-family: "Work Sans", sans-serif;
+        }
+        
+        #side-panel {
+            position: absolute;
+            left: 0;
             top: 0;
             bottom: 0;
-            padding: 15px;
+            width: 33%;
+            background: whitesmoke;
+            border-right: 2px solid #1C9976;
+            overflow-y: scroll;
+        }
+        
+        h1 {
+            padding: 8px 25px 8px 15px;
+            margin: 0;
+            background: #1C9976;
+            color: whitesmoke;
+            font-weight: 400;
+            font-size: 1.5em;
+            text-align: right;
+        }
+        
+        h2 {
+            margin: 0;
+            padding: 8px 25px 8px 15px;
+            color: #1C9976;
+            font-weight: 500;
+            font-size: 1.2em;
+            text-align: left;
+        }
+        
+        h3 {
+            margin: 0;
+            padding: 8px 25px 8px 15px;
+            color: #1C9976;
+            font-weight: 500;
+            font-size: 1.2em;
+            text-align: left;
+            
+        }
+        
+     /*   label {
+            margin: 0;
+            padding: 8px 25px 8px 15px;
+            color: #1C9976;
+            font-weight: 500;
+            font-size: 1.2em;
+            text-align: left;
+            
+        }*/
+        
+        #side-panel p {
+            margin: 8px 0 4px;
+            padding: 0 25px 0 15px;
+            color: #3d3d3d;
+            text-align: right;
+            font-size: 1em;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 67%;
+        }
+        
+        /* #map {
+            width: 60%;
+            height: 540px;
+            margin: 10px 10%;
+            background: whitesmoke;
+            border: 2px solid #dddedf;
+        }*/
+        
+          #side-panel {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 33%;
+            background: whitesmoke;
+            border-right: 2px solid #1C9976;
+            overflow-y: scroll;
+        }
+        
+       footer {
+            position:bottom
+            padding: 6px 10%;
+            width: 80%;
+        }
+        
+        p {
+            font-size: 1em;
+            color: #001323;
         }
     </style>
 </head>
@@ -38,35 +126,39 @@
 <body>
 
     <div id="map"></div>
+    <div id="side-panel">
+        <h1>Student attrition rates in Kenya</h1>
+        <h2>2014 enrollment rates for boys and girls</h2>
 
-    <div id="controls">
-
-        <h2>VBSC Type</h2>
-        <label>
-
+        <h3>VBSC Type</h3>
+            <label>
+                
+            <br>
             <input type="checkbox" id="cbox1" value="cooperativ">Cooperative
             <br>
-            <input type="checkbox" id="cbox1" value="csa">CSA
+            <input type="checkbox" id="cbox2" value="csa">CSA
             <br>
-            <input type="checkbox" id="cbox2" value="food_hub">Food Hub
+            <input type="checkbox" id="cbox3" value="food_hub">Food Hub
             <br>
-            <input type="checkbox" id="cbox2" value="online_de">Online Delivery </label>
+            <input type="checkbox" id="cbox4" value="online_de">Online Delivery </label>
 
         <h3>Products Available</h3>
         <label>
-
+            <br>
             <input type="checkbox" id="cbox1" value="eggs">eggs
             <br>
-            <input type="checkbox" id="cbox1" value="meat">meat
+            <input type="checkbox" id="cbox2" value="meat">meat
             <br>
-            <input type="checkbox" id="cbox2" value="dairy">dairy </label>
-    </div>
+            <input type="checkbox" id="cbox3" value="dairy">dairy </label>
+        
+         </div>
+    
 
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 
     <script>
         var options = {
-            center: [37.8, -85.8],
+            center: [37.8, -93],
             zoom: 4,
             zoomControl: true
         }
