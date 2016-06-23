@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
-    <title>Final Project</title>
+
+    <title>VBSCs in U.S. </title>
+
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-
-    <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
-    <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/0.9.0/simple_statistics.min.js'></script>
-
-
-    <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
-
-
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
     <style>
-        html,
-        body,
-        #map {
-            height: 100%;
-            padding: 0;
+        body {
             margin: 0;
+            padding: 0;
+            background: whitesmoke;
+            font-family: "Work Sans", sans-serif;
+        }
+        
+        h1 {
+            padding: 8px 25px 8px 15px;
+            margin: 0;
+            background: #1C9976;
+            color: black;
+            font-weight: 500;
+            font-size: 1.7em;
+            text-align: left;
+        }
+        
+        h2 {
+            margin: 0;
+            padding: 8px 25px 8px 15px;
+            color: #cc0066;
+            font-weight: 700;
+            font-size: 1.5em;
+            text-align: left;
+        }
+        
+        h3 {
+            margin: 0;
+            padding: 8px 25px 8px 15px;
+            color: #black;
+            font-weight: 500;
+            font-size: 1.4em;
+            text-align: left;
+        }
+        
+        #side-panel p {
+            margin: 8px 0 4px;
+            padding: 0 25px 0 15px;
+            color: #3d3d3d;
+            text-align: left;
+            font-size: 1em;
         }
         
         #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 67%;
+        }
+        /*  #map {
+            width: 60%;
+            height: 540px;
+            margin: 10px 10%;
+            background: whitesmoke;
+            border: 2px solid #dddedf;
+        }*/
+        
+        #side-panel {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 33%;
+            background: #00cc99;
+            border-right: 2px solid #1C9976;
+            overflow-y: scroll;
+        }
+        
+        footer {
+            padding: 6px 10%;
             width: 80%;
         }
         
-        #controls {
-            width: 20%;
-            position: absolute;
-            right: 0;
-            background: whitesmoke;
-            top: 0;
-            bottom: 0;
-            padding: 15px;
-        }
-        
-        .legend {
-            padding: 6px 8px;
+        p {
             font-size: 1em;
-            background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-        }
-        
-        .legend h3 {
-            font-size: 1.1em;
-            font-weight: normal;
             color: #001323;
-            margin: 0 0 10px 0;
-        }
-        
-        .legend span {
-            width: 20px;
-            height: 20px;
-            float: left;
-            margin: 0 10px 4px 0;
-        }
-        
-        .legend label {
-            font-size: 1.1em;
-        }
-        
-        .legend label:after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        
-        .leaflet-right .leaflet-control {
-            margin-right: 40px;
         }
     </style>
 </head>
@@ -79,239 +94,190 @@
 <body>
 
     <div id="map"></div>
-    <div id="controls">
 
-        <h2>VBSC Type</h2>
+    <div id="side-panel">
+        <div id="intro">
+            <h1>Values-Based Food Supply Chains</h1>
+
+            <p>This map is an online database of Values-based food supply chains. Values-based food supply chains are strategic business alliances among farms/ranches of the middle and other agrifood enterprises that: (a) handle significant volumes of high-quality, differentiated food products, (b) operate effectively at multi-state, regional levels, and (c) distribute profits equitably among the strategic partners. Values-based supply chain business models place emphasis on both the values associated with the food and on the values associated with the business relationships within the food supply chain.</p>
+
+            <p>Data was acquired from a primary source database of value-based supply chains collected through an <a href="http://agofthemiddle.org/?cat=7">AFRI Ag in the Middle Multi-state Project</a></p>
+
+            <p>Map developed by Heather Hyden</p>
+
+            <h2>Select the boxes below to see where supply chains are located that fit your specifications </h2>
+        </div>
+
+        <h3>Geographic Service Area</h3>
         <label>
+            <input type="checkbox" id="cbox1" value="county">County
+            <br>
+            <input type="checkbox" id="cbox2" value="state2">State
+            <br>
+            <input type="checkbox" id="cbox3" value="regional">Regional
+            <br>
+            <input type="checkbox" id="cbox4" value="national">National
+        </label>
 
-            <input type="checkbox" id="cbox1" value="cooperativ">Cooperative
+        <h3>VBSC Type</h3>
+        <label>
+            <input type="checkbox" id="cbox1" value="cooperative">Cooperative
             <br>
             <input type="checkbox" id="cbox2" value="csa">CSA
             <br>
             <input type="checkbox" id="cbox3" value="food_hub">Food Hub
             <br>
-            <input type="checkbox" id="cbox4" value="online_de">Online Delivery </label>
+            <input type="checkbox" id="cbox4" value="online_delivery">Online Delivery
+        </label>
+
+        <h3>Value Claims</h3>
+        <label>
+            <input type="checkbox" id="cbox5" value="accessability">Accessibility
+            <br>
+            <input type="checkbox" id="cbox6" value="affordability">Affordability
+            <br>
+            <input type="checkbox" id="cbox7" value="commerce_economics_local_economy">Local Economic Development
+            <br>
+            <input type="checkbox" id="cbox7" value="community">Community
+            <br>
+            <input type="checkbox" id="cbox8" value="education_consumers">Consumer Education
+            <br>
+            <input type="checkbox" id="cbox8" value="education_farmers">Farmer Education
+            <br>
+            <input type="checkbox" id="cbox9" value="fair">Fair Trade
+            <br>
+            <input type="checkbox" id="cbox10" value="fresh">Fresh
+            <br>
+            <input type="checkbox" id="cbox11" value="health_nutrition">Health and Nutrition
+            <br>
+            <input type="checkbox" id="cbox12" value="humane_animal">Humane:animals
+            <br>
+            <input type="checkbox" id="cbox13" value="organic">Organic
+            <br>
+            <input type="checkbox" id="cbox14" value="sustainable_environment">Sustainability
+            <br>
+            <input type="checkbox" id="cbox15" value="transparency">Transparency
+            <br>
+            <input type="checkbox" id="cbox16" value="ahsf">Food Safety
+
+        </label>
 
         <h3>Products Available</h3>
         <label>
+            <input type="checkbox" id="cbox17" value="eggs">eggs
+            <br>
+            <input type="checkbox" id="cbox18" value="meat">meat
+            <br>
+            <input type="checkbox" id="cbox19" value="dairy">dairy
+            <br>
+            <input type="checkbox" id="cbox20" value="seafood">seafood
+            <br>
+            <input type="checkbox" id="cbox21" value="preserves_honey">preserves/honey
+            <br>
+            <input type="checkbox" id="cbox22" value="value_added">value-added/dry-goods
+            <br>
+            <input type="checkbox" id="cbox23" value="produce">produce
 
-            <input type="checkbox" id="cbox1" value="eggs">eggs
-            <br>
-            <input type="checkbox" id="cbox2" value="meat">meat
-            <br>
-            <input type="checkbox" id="cbox3" value="dairy">dairy </label>
+        </label>
     </div>
 
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+
     <script>
         var options = {
-            center: [37.8, -94],
-            zoom: 4.5,
+            center: [37.8, -93],
+            zoom: 4,
             zoomControl: true
         }
         var map = L.map('map', options);
 
-        var vbscs, states; // global variables to reference
-
-        var removedLayers = L.layerGroup();
-
-
         var tiles = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+
             maxZoom: 18,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM sites', function (data) {
-
-            $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM state_kml', function (statesData) {
-
-                drawMap(data, statesData);
-
-            });
-
-        });
-
-        function getColor(count, breaks) {
-
-            if (count == null) {
-                return 'gray';
-            }
-
-            if (count === 0) {
-                return 'blue';
-            }
-
-            return count <= breaks[1] ? "#ffffb2" :
-                count <= breaks[2] ? "#fecc5c" :
-                count <= breaks[3] ? "#fd8d3c" :
-                count <= breaks[4] ? "#f03b20" :
-                "#bd0026"
-
-        }
-
-        function drawLegend(breaks) {
-
-            var legend = L.control({
-                position: 'bottomright'
-            });
-
-            legend.onAdd = function () {
-
-                var div = L.DomUtil.create('div', 'legend');
-
-                div.innerHTML = "<h3>VBSCs per State</h3>";
-
-                div.innerHTML += '<span style="background: blue"></span> ' +
-                    '<label>zero</label>';
+        $.getJSON('https://hlhyden1.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM pointswlatlon', function (data) {
+            console.log(data); // you have access to the geojson data here!
 
 
-                // for each of our breaks
-                for (var i = 1; i < breaks.length; i++) {
-                    // determine the color associated with each break value,
-                    // including the lower range value
-
-                    var color = getColor(breaks[i], breaks);
-
-                    // concatenate a <span> tag styled with the color and the range values
-                    // of that class and include a label with the low and a high ends of that class range
-                    div.innerHTML +=
-                        '<span style="background:' + color + '"></span> ' +
-                        '<label>' + (breaks[i - 1]) + ' &mdash; ' +
-                        (breaks[i]) + '</label>';
-                }
-
-                return div;
-
-            };
-
-            legend.addTo(map);
-
-
-
-        }
-
-        function getBreaks(statesData) {
-
-            var dataRange = [];
-            statesData.features.forEach(function (state) {
-
-                //            var val = state.properties.count/state.properties.farmers
-                var val = state.properties.count / 263;
-
-                dataRange.push(val)
-            })
-
-
-            var breaks = ss.jenks(dataRange, 5);
-
-            return breaks;
-
-        }
-
-        function drawMap(data, statesData) { //not sure how to access
-
-            var breaks = getBreaks(statesData);
-
-            states = L.geoJson(statesData, {
-
-                style: function (feature) {
-
-                    return {
-
-                        color: 'white',
-                        weight: 3,
-                        fillOpacity: 1,
-                        //fillColor: getColor(feature.properties.count)  
-                        fillColor: getColor(feature.properties.count / 263, breaks)
-
-                    }
-
-                }
-
-            }).addTo(map);
-
-            drawLegend(breaks);
-
-            vbscs = L.geoJson(data, {
+            var vbscs = L.geoJson(data, {
                 pointToLayer: function (properties, latlng) {
                     return L.circleMarker(latlng, {
                         opacity: 1,
-                        weight: 2,
+                        weight: 1,
                         fillOpacity: .6,
-                        radius: 4,
-                        stroke: false,
+                        radius: 6,
+                        stroke: true,
                         fillColor: 'green'
 
                     });
                 },
                 onEachFeature: function (feature, layer) {
 
-                    var popup = feature.properties.business_n;
-                    layer.bindPopup(popup);
+                    var popup = '<b>City: </b>' + feature.properties.city + '<br><b>Business Name: </b>' + feature.properties.business_name + '<br><b>Website: </b><a href="' + feature.properties.website + '">' + feature.properties.website + '</a>'
 
+                    layer.bindPopup(popup);
 
                 }
             }).addTo(map);
 
-
-            addUI();
-
-        }
-
-        function addUI() {
+            var currentChecked = [];
+            $('input').on('change', function () {
 
 
-            var sourcesLayers = {
-                "VBSCs": vbscs,
-                "State Count": states
+                var val = $(this).val();
+
+                if ($(this).attr('checked')) {
+                    currentChecked.push(val);
+                    filterSelection(currentChecked);
+                } else {
+
+                    var i = currentChecked.indexOf(val);
+                    if (val != 1) {
+                        currentChecked.splice(i, 1);
+                    }
+                    filterSelection(currentChecked);
+                }
+
+            });
+
+            var removedLayers = L.layerGroup();
+
+            function filterSelection(vals) {
+
+                // first add any layers from the removed layers
+                // and clear the removedLayers
+                removedLayers.eachLayer(function (layer) {
+
+                    map.addLayer(layer);
+                    removedLayers.removeLayer(layer);
+
+                });
+                // then loop through our currently displayed properties
+                // add them to the removedLayers group and remove from map
+
+                for (var i = 0; i < vals.length; i++) {
+
+                    vbscs.eachLayer(function (layer) {
+
+
+                        if (layer.feature.properties[vals[i]] == false) {
+
+                            removedLayers.addLayer(layer);
+                            map.removeLayer(layer);
+
+                        }
+
+                    });
+
+                }
+
             }
 
-            L.control.layers(null, sourcesLayers, {
-                collapsed: false
-            }).addTo(map);
-
-        }
-
-        var currentChecked = [];
-
-       
-        //         $('input').on('change', function () {
-        //                var val = $(this).val();
-        //       
-        //                if (this.checked) {
-        //                    currentChecked.push(val);
-        //                    filterSelection(currentChecked);
-        //                } else {
-        //                    var i = currentChecked.indexOf(val);
-        //                    if (val != 1) {
-        //                        currentChecked.splice(i, 1);
-        //                    }
-        //                    filterSelection(currentChecked);
-        //                }
-        //            });
-
-
-
-           function filterSelection(vals) {
-               console.log(vals)
-                   // first add any layers from the removed layers
-                   // and clear the removedLayers
-               removedLayers.eachLayer(function (layer) {
-                   vbscs.addLayer(layer);
-                   removedLayers.removeLayer(layer);
-               });
-               // then loop through our currently displayed properties
-               // add them to the removedLayers group and remove from map
-               for (var i = 0; i < vals.length; i++) {
-                   vbscs.eachLayer(function (layer) {
-                       if (layer.feature.properties[vals[i]] == false) {
-                           removedLayers.addLayer(layer);
-                           vbscs.removeLayer(layer);
-                       }
-                   });
-               }
-           }
+        });
     </script>
 </body>
+
 
 </html>
